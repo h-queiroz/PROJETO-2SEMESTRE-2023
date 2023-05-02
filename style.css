@@ -1,0 +1,16 @@
+body {
+  margin: 20px;
+  background-color: #23282A;
+}
+
+button {
+  border: none;
+  color: #e9e9e9;
+  background-color: transparent;
+}
+
+.buttons {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
