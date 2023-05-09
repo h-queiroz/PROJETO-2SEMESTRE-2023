@@ -1,6 +1,8 @@
 body {
   margin: 20px;
-  background-color: #23282A;
+  background-color: #090909;
+  color:gray;
+  font-family:'Courier New';
 }
 
 button {
@@ -9,8 +11,25 @@ button {
   background-color: transparent;
 }
 
+img {
+  width:500px;
+}
+
+.image {
+  display:flex;
+  justify-content:center;
+  margin-top:25px;
+}
+
 .buttons {
   display:flex;
   justify-content:center;
   align-items:center;
+}
+
+.texto{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
 }
