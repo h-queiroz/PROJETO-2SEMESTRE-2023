@@ -1,7 +1,7 @@
 # PROJETO-1SEMESTRE-2023
-Projeto do 1° Semestre do ano de 2023, Professor: Edson.
+Projeto do 1° Semestre do ano de 2023, Professor: Edson Melo.
 
-Integrantes - RA:
+Integrante - RA:
 
 Hector Queiróz Ribeiro dos Santos - 322201409<br>
 Kauan Gomes de Souza - 3022203563<br>
