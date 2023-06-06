@@ -1,4 +1,3 @@
-
 body{
   margin: 20px;
   background-color: black;
@@ -77,8 +76,13 @@ img {
 }
 
 .texto{
-  display:grid;
+  display:flex;
   justify-content:center;
   align-items:center;
   color:white;
+}
+
+object{
+  width:100%;
+  height:100%;
 }
