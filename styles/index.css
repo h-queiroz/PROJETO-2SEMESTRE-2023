@@ -1,20 +1,16 @@
-
 body{
-  background-image: url(imgs/seamless-pizza-ingredients_1176-269.webp);
+  background-image: url("../imgs/fundo.webp");
   background-size: 50%;
   background-attachment: fixed;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 5px;
-
 }
-
 
 .top{
   margin-left: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 /*para decorar os bottoes*/
@@ -24,8 +20,8 @@ body{
   padding: 5px;
   border-radius: 5px;
   transition: all 1s;
-
 }
+
 /* este codigo e para quando passar a fiquar cinza */
 .paginas :hover{
   background-color: gray;
