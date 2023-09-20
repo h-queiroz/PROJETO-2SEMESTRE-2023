@@ -7,19 +7,35 @@ body{
 }
 
 .top{
-  margin-left: 50px;
+  margin-left: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 /*para decorar os bottoes*/
-.top a{
+.paginas a{
   color:white;
   text-decoration: none;
-  padding: 5px;
-  border-radius: 5px;
-  transition: all 1s;
+  display: inline;
+  justify-content: center;
+  padding: 3px;
+  
+}
+
+.login{
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 250px;
+}
+
+.cadastro{
+  display: inline;
+  padding: 0;
+  margin: 0;
+  
 }
 
 /* este codigo e para quando passar a fiquar cinza */
@@ -32,36 +48,31 @@ body{
   transition: all 1s;
 
 }
+
 /* logo da pizza */
 .logo img{
   width: 75px;
   display: flex;
-
 }
 
-
 .texto{
-  display: block;
+  display:flex;
   justify-content:center;
   align-items:center;
   color: white;
-
 }
 
 .image {
   display: flex;
   justify-content:center;
-  margin-top:25px;
-
 }
 
 img{
   width:500px;
-
 }
+
 /*link do cardapio*/
 object{
   width:100%;
   height:100%;
-
 }
