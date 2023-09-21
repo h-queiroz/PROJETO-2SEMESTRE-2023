@@ -1,78 +1,23 @@
 body{
-  background-image: url("../imgs/fundo.webp");
-  background-size: 50%;
-  background-attachment: fixed;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 5px;
-}
+    background-image: url("../imgs/fundo.webp");
+    background-size: 25%;
 
-.top{
-  margin-left: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-
-/*para decorar os bottoes*/
-.paginas a{
-  color:white;
-  text-decoration: none;
-  display: inline;
-  justify-content: center;
-  padding: 3px;
-  
-}
-
-.login{
-  display: inline;
-  padding: 0px;
-  margin: 0px;
-  margin-left: 250px;
-}
-
-.cadastro{
-  display: inline;
-  padding: 0;
-  margin: 0;
-  
-}
-
-/* este codigo e para quando passar a fiquar cinza */
-.paginas :hover{
-  background-color: gray;
-  transition: all 0.3s;
-  text-decoration: none;
-  padding: 5px;
-  border-radius: 5px;
-  transition: all 1s;
 
 }
 
-/* logo da pizza */
-.logo img{
-  width: 75px;
-  display: flex;
+.logo a img{
+width: 75px;
+
 }
 
-.texto{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  color: white;
-}
+.image img{
+width: 700px;
+background-color: black;
+border-radius: 30px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 
-.image {
-  display: flex;
-  justify-content:center;
-}
 
-img{
-  width:500px;
-}
-
-/*link do cardapio*/
-object{
-  width:100%;
-  height:100%;
 }
