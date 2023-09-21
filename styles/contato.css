@@ -1,0 +1,20 @@
+body{
+  background-image: url("../imgs/fundo.webp");
+}
+
+img{
+  width: 75px;
+  border: 2.5px red solid;
+  margin-top:40px;
+  margin-left:40px;
+}
+
+a{
+   color: white;
+   font-size: 25px;
+
+ }
+ div{
+   display: inline-block;
+   margin-left: 900px;
+ }
