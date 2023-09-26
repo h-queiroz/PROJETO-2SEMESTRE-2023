@@ -14,7 +14,10 @@ a{
    font-size: 25px;
 
  }
- div{
+ .links-lado-direito{
    display: inline-block;
    margin-left: 900px;
  }
+.links-lado-esquerdo a{
+  display:block;
+}
