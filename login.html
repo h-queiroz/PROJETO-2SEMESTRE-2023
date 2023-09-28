@@ -28,11 +28,13 @@
       <hr> 
     <div class="box">
       <h1>Login</h1>
+      <form action="login.php" method="post">
         <h2>E-mail</h2>
-        <input type="email" placeholder="Digite seu E-mail">
+        <input type="email" name="email" placeholder="Digite seu E-mail">
         <h2>Senha</h2>
-        <input type="password" placeholder="Digite sua Senha">
-        <input type="submit">
+        <input type="password" name="senha" value="senha" placeholder="Digite sua Senha">
+        <input type="submit" name="submit" value="submit">
+      </form>
     </div>
 </body>
 </html>
