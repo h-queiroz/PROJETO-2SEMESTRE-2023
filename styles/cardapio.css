@@ -1,0 +1,28 @@
+body{
+
+  background-image: url("../imgs/fundo.webp");
+  background-size: 25%;
+
+}
+img{
+  width: 75px;
+  border: 2.5px red solid;
+  margin-top:40px;
+  margin-left:40px;
+}
+a{
+   color: white;
+   font-size: 25px;
+
+ }
+ .links-lado-direito{
+   display: inline-block;
+   position: absolute;
+   top: 68px;
+   width: 500px;
+   left: 750px;
+
+ }
+ .links-lado-direito a{
+   margin-left: 10px;
+ }
