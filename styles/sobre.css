@@ -1,6 +1,6 @@
 body{
   background-image: url("../imgs/fundo.webp");
-  background-size: 50%;
+  background-size: 25%;
   background-attachment: fixed;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 5px;
@@ -11,7 +11,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
 }
 
 /*para decorar os bottoes*/
@@ -21,7 +21,7 @@ body{
   display: inline;
   justify-content: center;
   padding: 3px;
-  
+
 }
 
 .login{
@@ -35,7 +35,7 @@ body{
   display: inline;
   padding: 0px;
   margin: 0px;
-  
+
 }
 
 /* este codigo e para quando passar a fiquar cinza */
@@ -62,12 +62,12 @@ body{
   align-items:center;
   margin-left: 50px;
   color: white;
-  letter-spacing: 0px;  
+  letter-spacing: 0px;
 }
 
 .direitos-autorais{
-  position: fixed; 
-  bottom: 0; 
+  position: fixed;
+  bottom: 0;
   left: 0;
   width: 100%;
   background-color: black;

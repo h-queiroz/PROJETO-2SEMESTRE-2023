@@ -1,5 +1,7 @@
 body{
   background-image: url("../imgs/fundo.webp");
+  background-size: 25%;
+
 }
 
 img{
@@ -18,8 +20,8 @@ a{
    display: inline-block;
    position: absolute;
    top: 68px;
-   width: 400px;
-   left: 850px;
+   width: 500px;
+   left: 750px;
 
  }
  .links-lado-direito a{

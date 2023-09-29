@@ -1,6 +1,6 @@
 body{
   background-image: url("../imgs/fundo.webp");
-  background-size: 50%;
+  background-size: 25%;
   background-attachment: fixed;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 5px;
@@ -21,7 +21,7 @@ body{
   display: inline;
   justify-content: center;
   padding: 3px;
-  
+
 }
 
 .login{
@@ -35,7 +35,7 @@ body{
   display: inline;
   padding: 0px;
   margin: 0px;
-  
+
 }
 
 /* este codigo e para quando passar a fiquar cinza */
@@ -54,7 +54,7 @@ body{
   width: 75px;
   display: flex;
 }
-  
+
   /*para decorar os bottoes*/
   .top a{
     color:white;
@@ -64,7 +64,7 @@ body{
     transition: all 1s;
     text-decoration: underline;
   }
-  
+
   /* este codigo e para quando passar a fiquar cinza */
   .paginas :hover{
     background-color: gray;
