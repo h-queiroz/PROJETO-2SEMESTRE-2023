@@ -1,28 +1,29 @@
 <?php
-include("conexao.php");
+    //conexão com o mysql
+    include("conexao.php");
+    //criando uma variavel com o valor cadastrado
+    $email=$_POST['email'];
+    $senha=$_POST['senha'];
+    //pegando os valores do banco de dados
+    $sql="SELECT * FROM usuarios where email = ?";
 
-if (isset($_POST['submit'])) {
+    $stmt = $conexao->prepare($sql);
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result()->fetch_assoc();
 
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    //echo "<pre>";
+    //print_r($result);
+    //echo"</pre>";
 
-    // Consulta SQL corrigida com a conexão
-    $sql = mysqli_query($conexao, "SELECT * FROM usuarios WHERE email = '$email'") or die("Erro ao selecionar");
-
-    if (mysqli_num_rows($sql) > 0) {
-        $row = mysqli_fetch_assoc($sql);
-        $hashedSenha = $row['senha'];
-
-        // Verifique a senha usando password_verify
-        if (password_verify($senha, $hashedSenha)) {
-            // Redirecione para a página 'painel.html'
-            header("Location: painel.html");
-            exit();
-        } else {
-            echo "Nome de usuário ou senha incorretos.";
-        }
-    } else {
-        echo "Nome de usuário não encontrado.";
+    //verificando o email e senha
+    if($email == $result["email"] && password_verify($senha, $result['senha'])){
+        echo"<script language='javascript' type='text/javascript'>
+    alert('Login feito com sucesso');window.location
+    .href='index.html';</script>";
+    }else{
+        echo"<script language='javascript' type='text/javascript'>
+        alert('email e/ou senha incorretos');window.location
+        .href='login.html';</script>";
     }
-}
 ?>
