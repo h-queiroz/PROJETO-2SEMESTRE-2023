@@ -1,24 +1,33 @@
 <?php
+   //conexão com o mysql
     include"conexao.php";
 
+    //criando uma variavel com o valor cadastrado
     $email=$_POST['email'];
     $senha=$_POST['senha'];
 
-    $sql="SELECT * FROM usuarios where email = '$email' and senha = '$senha'";
+    //pegando os valores do banco de dados
+    $sql="SELECT * FROM usuarios where email = ?";
 
-    echo"$email<br>";
-    echo"$senha";
+    $stmt = $conexao->prepare($sql);
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result()->fetch_assoc();
 
-    $verificar = mysqli_query($conexao, $sql);
-    echo"<pre>";
-    print_r($conexao);
-    print_r($verificar);
-    echo"</pre>";
+    //echo "<pre>";
+    //print_r($result);
+    //echo"</pre>";
 
-   if (mysqli_num_rows($verificar)>0) {
-    echo "login com sucesso";
-}
+    //verificando o email e senha
+    if($email == $result["email"] && password_verify($senha, $result['senha'])){
+        echo"<script language='javascript' type='text/javascript'>
+    alert('Login feito com sucesso');window.location
+    .href='index.html';</script>";
+    }
+    
     else{
-        echo"deu erro";
+        echo"<script language='javascript' type='text/javascript'>
+        alert('email e/ou senha incorretos');window.location
+        .href='login.html';</script>";
     }
 ?>
