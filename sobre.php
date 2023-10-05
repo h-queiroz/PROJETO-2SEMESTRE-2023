@@ -19,14 +19,14 @@
       </a>
     </div>
     <div class="paginas">
-      <a href="cardapio.html">Cardapio</a>
-      <a href="contato.html">Contato</a>
-      <a href="sobre.html">sobre</a>
+      <a href="cardapio.php">Cardapio</a>
+      <a href="contato.php">Contato</a>
+      <a href="sobre.php">sobre</a>
       <div class="login">
-        <a href="login.html">Entrar</a>
+        <a href="login.php">Entrar</a>
       </div>
       <div class="cadastro">
-        <a href="cadastro.html">Criar Conta</a>
+        <a href="cadastro.php">Criar Conta</a>
       </div>
     </div>
   </div>
