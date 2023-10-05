@@ -9,7 +9,7 @@
     </head>
 
     <body>
-      <a href="index.html"> <img src="imgs/pizza.png">  </a>
+      <a href="index.php"> <img src="imgs/pizza.png">  </a>
 
     <div class="links-lado-direito">
 
