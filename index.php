@@ -14,19 +14,19 @@
 <body>
   <div class="top">
     <div class="logo">
-      <a href="index.html">
+      <a href="index.php">
         <img src="imgs/pizza.png">
       </a>
     </div>
     <div class="paginas">
-      <a href="cardapio.html">Cardapio</a>
-      <a href="contato.html">Contato</a>
-      <a href="sobre.html">Sobre</a>
+      <a href="cardapio.php">Cardapio</a>
+      <a href="contato.php">Contato</a>
+      <a href="sobre.php">Sobre</a>
       <div class="login">
-        <a href="login.html">Login</a>
+        <a href="login.php">Login</a>
       </div>
       <div class="cadastro">
-        <a href="cadastro.html">Criar Conta</a>
+        <a href="cadastro.php">Criar Conta</a>
       </div>
 
     </div>
