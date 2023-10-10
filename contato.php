@@ -13,11 +13,11 @@
 
     <div class="links-lado-direito">
 
-      <a href="cardapio.html">Cardapio</a>
-      <a href="contato.html" class="verde">Contato</a>
-      <a href="sobre.html">Sobre-Nós</a>
-      <a href="login.html">Login</a>
-      <a href="cadastro.html">Cadastro</a>
+      <a href="cardapio.php">Cardapio</a>
+      <a href="contato.php" class="verde">Contato</a>
+      <a href="sobre.php">Sobre-Nós</a>
+      <a href="login.php">Login</a>
+      <a href="cadastro.php">Cadastro</a>
     </div>
 <hr>
   <div class="links-lado-esquerdo">

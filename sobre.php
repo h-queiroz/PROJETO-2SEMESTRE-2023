@@ -1,3 +1,11 @@
+<?php
+session_start();
+include"conexao.php";
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +13,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:ital,wght@0,400;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/sobre.css" />
   <link rel="icon" href="imgs/pizza.png" type="image/x-icon">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -15,18 +22,30 @@
   <div class="top">
     <div class="logo">
       <a href="index.php">
-        <img src="imgs/pizza.png">
+        <img src="imgs/pizza.png" alt="logo">
       </a>
     </div>
     <div class="paginas">
       <a href="cardapio.php">Cardapio</a>
       <a href="contato.php">Contato</a>
       <a href="sobre.php">sobre</a>
-      <div class="login">
-        <a href="login.php">Entrar</a>
-      </div>
-      <div class="cadastro">
-        <a href="cadastro.php">Criar Conta</a>
+      <?php
+      if(isset($_SESSION['id'])){
+        $usuario = $_SESSION['nome'];
+        echo'<div class="login">
+          <a href="perfil.php">$usuario</a>
+        </div>
+        <div class="cadastro">;
+          <a href="deslogar.php">sair</a>;
+        ';
+      }else{
+          echo'<div class="login">
+          <a href="login.php">Entrar</a>
+        </div>
+        <div class="cadastro">
+          <a href="cadastro.php">Criar Conta</a>';
+        }
+        ?>
       </div>
     </div>
   </div>
@@ -34,7 +53,7 @@
   </div>
  <div class="texto">
       <h1 class="sobre">Nossa História</h1>
-      <p class="sobre">Em julho de 2008 um sonho concretizado, nasceu no coração e tornou solidez com poucos recursos, muito esforço, trabalho e dedecação, assim com poucos recursos, trabalho e dedicação, assim  foi construida a Pizzaria Bonna Dica.com o objetivo único de conquistar o paladar e a mesa das familias. A Bonna Dica vem se aprimorando e melhorando todos os dias, oferecendo aos seus clientes pizzas preparadas com amor e carinho em cada pedaço.</p>
+      <p class="sobre">Em julho de 2008 um sonho concretizado, nasceu no coração e tornou solidez com poucos ddrecursos, muito esforço, trabalho e dedecação, assim com poucos recursos, trabalho e dedicação, assim  foi construida a Pizzaria Bonna Dica.com o objetivo único de conquistar o paladar e a mesa das familias. A Bonna Dica vem se aprimorando e melhorando todos os dias, oferecendo aos seus clientes pizzas preparadas com amor e carinho em cada pedaço.</p>
 
       <h1 class="historia">História da Pizza</h1>
 

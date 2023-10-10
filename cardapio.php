@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
     <head>
       <link rel="icon" href="imgs/pizza.png" type="image/x-icon">
         <meta charset="UTF-8" />
@@ -9,7 +8,7 @@
     </head>
 
     <body>
-      <a href="index.php"> <img src="imgs/pizza.png">  </a>
+      <a href="index.php"><img src="imgs/pizza.png" alt="logo"></a>
 
     <div class="links-lado-direito">
 

@@ -1,41 +1,45 @@
+@font-face {
+  font-family: 'DK Midnight Chalker';
+  src: url('../DK Midnight Chalker.otf') format('opentype');
+}
+
+
 body{
-  background: url("../imgs/fundo.webp");
-  background-size: 25%;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 5px;
-}
+    background-image: url("../imgs/black-bg.jpg");
+    background-size: 25%;
 
-.top{
-  margin-left: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: underline;
 }
-
-/*para decorar os bottoes*/
-.top a{
+.paginas a{
   color:white;
   text-decoration: none;
+  display: inline;
+  justify-content: center;
+  padding: 3px;
+  font-family: "DK Midnight Chalker";
+
+}
+.paginas {
+  position: absolute;
+  top: 45px;
+  right: 30px;
+  font-size: 40px;
+}
+/* este codigo e para quando passar a fiquar cinza */
+.paginas :hover{
+  background-color: gray;
+  transition: all 0.3s;
+  text-decoration: none; 
   border-radius: 5px;
-  text-decoration: underline;
+
 }
 
-.conta{
+.login{
   display: inline;
   margin-left: 250px;
 }
 
 .cadastro{
   display: inline;
-}
-
-/* este codigo e para quando passar a fiquar cinza */
-.paginas :hover{
-  background-color: gray;
-  padding: 5px;
-  border-radius: 5px;
-  transition: all 1s;
 
 }
 
