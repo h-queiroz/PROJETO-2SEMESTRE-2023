@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/contato.css" />
   </head>
   <body>
-    <a href="index.html">
+    <a href="index.php">
     <img src="imgs/pizza.png" alt="logo" class="logo">
 
   </a>

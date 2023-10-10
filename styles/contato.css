@@ -18,20 +18,20 @@ body{
 
 a{
    color: white;
-   font-size: 25px;
+   font-size: 35px;
 
  }
  .links-lado-direito{
    display: inline-block;
    position: absolute;
-   top: 40px;
-   width: 500px;
-   left: 350px;
+   top: 30px;
+   width: 750px;
+   left: 500px;
 
  }
  .links-lado-direito a{
    margin-left: 10px;
-   font-size: 33px;
+   font-size: 50px;
  }
  .links-lado-esquerdo{
       height: 300px;
@@ -44,7 +44,7 @@ background-image: url("../imgs/fundo-madeira.jpg");
 .links-lado-esquerdo a{
   display:inline;
   margin-left: 30px;
-  font-size: 30px;
+  font-size: 52px;
 margin-bottom: 8px;
 position: relative;
 top: 125px;
