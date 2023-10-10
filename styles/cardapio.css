@@ -8,7 +8,7 @@ body{
     background-size: 25%;
 }
 
-.logo a img{
+.logo img{
   width: 75px;
 }
 
@@ -19,6 +19,7 @@ body{
   justify-content: center;
   padding: 3px;
   font-family: "DK Midnight Chalker";
+
 }
 
 .paginas {
@@ -27,7 +28,6 @@ body{
   right: 30px;
   font-size: 40px;
 }
-
 .image img{
 width: 700px;
 background-color: black;
@@ -36,4 +36,15 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+}
+
+.texto {
+  font-size: 75px;
+  color:white;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  right: 600px;
+  bottom: 280px;
+  font-family: "DK Midnight Chalker";
 }
