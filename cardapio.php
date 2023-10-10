@@ -4,7 +4,7 @@
       <link rel="icon" href="imgs/pizza.png" type="image/x-icon">
         <meta charset="UTF-8" />
       <title>Bonna Dica</title>
-      <link rel="stylesheet" href="styles/cardapio.css" />
+      <link rel="stylesheet" href="styles/cardapio.css"/>
     </head>
 
     <body>

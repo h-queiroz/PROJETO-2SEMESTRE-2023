@@ -1,9 +1,11 @@
 <?php
-    session_start();
-    include "conexao.php";
-    //criando uma variavel com o valor cadastrado
-    $email=$_POST['email'];
-    $nome=$_POST['nome'];
+  session_start();
+    if(isset($_SESSION)){
+
+      include "conexao.php";
+      //criando uma variavel com o valor cadastrado
+      $email=$_POST['email'];
+      $nome=$_POST['nome'];
     $senha=$_POST['senha'];
     //verificando o email
     $sql = "SELECT * from usuarios where email = '$email'";
@@ -12,9 +14,7 @@
     
     //se existir outro email igual nao roda.
     if($result['email'] == $email){
-      echo"<script language='javascript' type='text/javascript'>
-      alert('email ou senha incorretos');window.location
-      .href='cadastro.php';</script>";
+      echo"nome ja existe";
     }
     //se não, roda o codigo.
     else {
@@ -34,9 +34,10 @@
         else{
             echo "Error: ".$sql."<br>".mysqli_error($conexao);
         }
-    mysqli_close($conexao);
-}
-?>
+        mysqli_close($conexao);
+      }
+    }
+      ?>
     
     </div>
 </body>
@@ -53,7 +54,7 @@
 <div class="top">
   <div class="logo">
     <a href="index.php">
-        <img src="imgs/pizza.png" alt="logo">
+        <img src="imgs/pizza.png">
       </a>
     </div>
     <div class="paginas">

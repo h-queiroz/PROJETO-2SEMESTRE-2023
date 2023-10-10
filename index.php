@@ -22,23 +22,8 @@
         <a href="cardapio.php">Cardapio</a>
         <a href="contato.php">Contato</a>
         <a href="sobre.php">Sobre</a>
-        <?php
-      if(isset($_SESSION['id'])){
-        $usuario = $_SESSION['nome'];
-        echo'<div class="login">
-          <a href="perfil.php">$usuario</a>
-        </div>
-        <div class="cadastro">;
-          <a href="deslogar.php">sair</a>;
-        ';
-      }else{
-          echo'<div class="login">
-          <a href="login.php">Entrar</a>
-        </div>
-        <div class="cadastro">
-          <a href="cadastro.php">Criar Conta</a>';
-        }
-    ?>
+        <a href="login.php">Login</a>
+        <a href="cadastro.php">Criar Conta</a>
       </div>
     
 

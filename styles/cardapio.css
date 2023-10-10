@@ -1,28 +1,39 @@
+@font-face {
+  font-family: 'DK Midnight Chalker';
+  src: url('../DK Midnight Chalker.otf') format('opentype');
+}
+
 body{
-
-  background-image: url("../imgs/fundo.webp");
-  background-size: 25%;
-
+    background-image: url("../imgs/black-bg.jpg");
+    background-size: 25%;
 }
-img{
+
+.logo a img{
   width: 75px;
-  border: 2.5px red solid;
-  margin-top:40px;
-  margin-left:40px;
 }
-a{
-   color: white;
-   font-size: 25px;
 
- }
- .links-lado-direito{
-   display: inline-block;
-   position: absolute;
-   top: 68px;
-   width: 500px;
-   left: 750px;
+.paginas a{
+  color:white;
+  text-decoration: none;
+  display: inline;
+  justify-content: center;
+  padding: 3px;
+  font-family: "DK Midnight Chalker";
+}
 
- }
- .links-lado-direito a{
-   margin-left: 10px;
- }
+.paginas {
+  position: absolute;
+  top: 45px;
+  right: 30px;
+  font-size: 40px;
+}
+
+.image img{
+width: 700px;
+background-color: black;
+border-radius: 30px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
