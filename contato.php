@@ -8,7 +8,8 @@
   </head>
   <body>
     <a href="index.html">
-    <img src="imgs/pizza.png" alt="logo">
+    <img src="imgs/pizza.png" alt="logo" class="logo">
+
   </a>
 
     <div class="links-lado-direito">
@@ -21,9 +22,9 @@
     </div>
 <hr>
   <div class="links-lado-esquerdo">
-    <a target="_blank" href="https://www.instagram.com/bonnadica/">instagram</a>
-    <a target="_blank" href="https://www.facebook.com/pizzariabonnadica/">facebook</a>
-   <a href="tel:+5511986024599">Clique aqui para ligar para (11) 99999-9999</a>
+    <a target="_blank" href="https://www.instagram.com/bonnadica/"><img src="imgs/img-insta.png" alt="">instagram</a>
+    <a target="_blank" href="https://www.facebook.com/pizzariabonnadica/"><img src="imgs/img-face.png" alt="">facebook </a>
+   <a href="tel:+5511986024599"><img src="imgs/img-fone.png" alt="">Clique aqui para ligar para (11) 99999-9999</a>
 
     </div>
   </body>
