@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  include "conexao.php";
+  ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -10,7 +15,7 @@
 
     <title>Pizzaria Bonna Dica</title>
   </head>
-
+  
   <body>
     <div class="top">
       <div class="logo">
@@ -19,26 +24,35 @@
         </a>
       </div>
       <div class="paginas">
-        <a href="cardapio.php">Cardapio</a>
-        <a href="contato.php">Contato</a>
-        <a href="sobre.php">Sobre</a>
-        <a href="login.php">Login</a>
-        <a href="cadastro.php">Criar Conta</a>
+      <a href="cardapio.php">Cardapio</a>
+      <a href="contato.php">Contato</a>
+      <a href="sobre.php">Sobre</a>
+      <?php if(isset($_SESSION['id'])){
+        $usuario = $_SESSION['nome'];
+        ?>
+          <a href="perfil.php"> <?php echo"$usuario";?> </a>
+          <a href="deslogar.php">sair</a>
+        </div>
+          
+          <?php
+         }else{  ?>
+          <a href="login.php">Entrar</a>
+          <a href="cadastro.php">Criar Conta</a>
+          </div>
+        <?php } ?>
       </div>
     
-
-
       </div>
     </div>
     <hr>
     <div class="texto">
       <p>Desde 2008 oferecendo a melhor experiência em pizza!</p>
     </div>
+      <?php print_r($_SESSION); ?>
     <div class="image">
     <img src="imgs/logo_transparente.png" alt="">
     </div>
     <div class="texto">
-      <p></p>
     </div>
   </body>
 </html>

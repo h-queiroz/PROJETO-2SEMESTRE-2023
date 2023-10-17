@@ -6,7 +6,7 @@
       //criando uma variavel com o valor cadastrado
       $email=$_POST['email'];
       $nome=$_POST['nome'];
-    $senha=$_POST['senha'];
+      $senha=$_POST['senha'];
     //verificando o email
     $sql = "SELECT * from usuarios where email = '$email'";
     $select = mysqli_query($conexao, $sql);
@@ -14,7 +14,7 @@
     
     //se existir outro email igual nao roda.
     if($result['email'] == $email){
-      echo"nome ja existe";
+      echo "nome ja existe";
     }
     //se não, roda o codigo.
     else {
@@ -26,9 +26,12 @@
         
         //se der certo mostrar cadastrado feito com sucesso
          if(mysqli_query($conexao, $sql)){
+           $_SESSION ["id"] = $result ["id"];
+           $_SESSION ["nome"] = $result ["nome"];
           echo"<script language='javascript' type='text/javascript'>
           alert('cadastro feito com sucesso');window.location
           .href='index.php';</script>";
+
         }
         //se der errado mostrar o erro
         else{

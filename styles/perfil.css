@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'DK Midnight Chalker';
+    src: url('../DK Midnight Chalker.otf') format('opentype');
+  }
+  
+  
+  body{
+      background-image: url("../imgs/black-bg.jpg");
+      background-size: 25%;
+  
+  }
+  .paginas a{
+    color:white;
+    text-decoration: none;
+    display: inline;
+    justify-content: center;
+    padding: 3px;
+    font-family: "DK Midnight Chalker";
+  
+  }
+  .paginas {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+    font-size: 40px;
+  }
+  /* este codigo e para quando passar a fiquar cinza */
+  .paginas :hover{
+    background-color: gray;
+    transition: all 0.3s;
+    text-decoration: none; 
+    border-radius: 5px;
+  
+  }
+  
+  .login{
+    display: inline;
+    margin-left: 250px;
+  }
+  
+  .cadastro{
+    display: inline;
+  
+  }
+  
+  /* logo da pizza */
+  .logo img{
+    width: 75px;
+    display: flex;
+    cursor: pointer;
+  }
+
+  h1, p{
+      font-size: 30px;
+      font-family: "DK Midnight Chalker";
+      color: white;
+  }
+

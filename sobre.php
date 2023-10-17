@@ -1,8 +1,8 @@
 <?php
-session_start();
-include"conexao.php";
-
-
+  if(isset($_SESSION)){
+    session_start();
+    include "conexao.php";
+  }
 ?>
 
 
@@ -29,23 +29,21 @@ include"conexao.php";
       <a href="cardapio.php">Cardapio</a>
       <a href="contato.php">Contato</a>
       <a href="sobre.php">sobre</a>
-      <?php
-      if(isset($_SESSION['id'])){
+      <?php if(isset($_SESSION['id'])){
         $usuario = $_SESSION['nome'];
-        echo'<div class="login">
-          <a href="perfil.php">$usuario</a>
-        </div>
-        <div class="cadastro">;
-          <a href="deslogar.php">sair</a>;
-        ';
-      }else{
-          echo'<div class="login">
-          <a href="login.php">Entrar</a>
-        </div>
-        <div class="cadastro">
-          <a href="cadastro.php">Criar Conta</a>';
-        }
         ?>
+          <div class="cadastro">
+          <a href="perfil.php"><?php echo"$usuario" ?></a>
+        </div>
+          <a href="deslogar.php">sair</a>
+          
+          <?php
+         }else{ ?>
+          <div class="cadastro">
+          <a href="login.php">login</a>
+        </div>
+          <a href="cadastro.php">Criar Conta</a>
+        <?php } ?>
       </div>
     </div>
   </div>

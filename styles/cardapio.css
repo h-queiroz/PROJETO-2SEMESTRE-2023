@@ -27,7 +27,17 @@ body{
   top: 45px;
   right: 30px;
   font-size: 40px;
+  
 }
+
+.paginas :hover{
+  background-color: gray;
+  transition: all 0.3s;
+  text-decoration: none; 
+  border-radius: 5px;
+
+}
+
 .image img{
 width: 700px;
 background-color: black;

@@ -21,8 +21,9 @@ body{
 .paginas {
   position: absolute;
   top: 45px;
-  right: 30px;
+  right: 35px;
   font-size: 40px;
+
 }
 /* este codigo e para quando passar a fiquar cinza */
 .paginas :hover{

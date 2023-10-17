@@ -1,6 +1,7 @@
 <?php
-  if(isset($_POST['email'])||isset($_POST['senha'])){
-      
+
+if(isset($_POST['email'])||isset($_POST['senha'])){
+  
     //conexão com o mysql
     include "conexao.php";
     //criando uma variavel com o valor cadastrado
@@ -20,15 +21,17 @@
 
     //verificando o email e senha
     if($email == $result["email"] && password_verify($senha, $result['senha'])){
-        echo"<script language='javascript' type='text/javascript'>
-    alert('Login feito com sucesso');window.location
-    .href='index.php';</script>";
+      $_SESSION ['id'] = $result ['id'];
+      $_SESSION ['nome'] = $result ['nome'];
+      $_SESSION ['email'] = $result ['email'];
+      header('location:index.php');
+    
   }else{
     echo"<script language='javascript' type='text/javascript'>
-    alert('email e/ou senha incorretos');window.location
-    .href='login.php';</script>";
+    alert('email e/ou senha incorretos');</script>";
   }
 }
+
   ?>
 
 <!DOCTYPE html>
@@ -51,11 +54,24 @@
       <a href="cardapio.php">Cardapio</a>
       <a href="contato.php">Contato</a>
       <a href="sobre.php">Sobre</a>
-      <div class="login">
-        <a href="login.php">Login</a>
+      <?php if(isset($_SESSION['id'])){
+        $usuario = $_SESSION['nome'];
+        ?>
+        <div class="login">
+          <a href="perfil.php"><?php echo"$usuario" ?></a>
+        </div>
+        <div class="cadastro">
+          <a href="deslogar.php">sair</a>
+          
+          <?php
+         }else{ ?>
+          <div class="login">
+          <a href="login.php">Entrar</a>
+        </div>
+        <div class="cadastro">
+          <a href="cadastro.php">Criar Conta</a>
+        <?php } ?>
       </div>
-      <div class="cadastro">
-        <a href="cadastro.php">Criar Conta</a>
       </div>
           </div>
         </div>

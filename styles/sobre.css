@@ -21,8 +21,10 @@ body{
 .paginas {
   position: absolute;
   top: 45px;
-  right: 30px;
   font-size: 40px;
+  left: 50%;
+  transform: translate(-50%,0);
+  
 }
 /* este codigo e para quando passar a fiquar cinza */
 .paginas :hover{
@@ -36,6 +38,13 @@ body{
 .login{
   display: inline;
   margin-left: 250px;
+}
+
+.cadastro a :hover{
+  background-color: gray;
+  transition: all 0.3s;
+  text-decoration: none; 
+  border-radius: 5px;
 }
 
 .cadastro{
