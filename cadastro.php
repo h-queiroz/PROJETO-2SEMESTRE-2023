@@ -28,6 +28,7 @@
          if(mysqli_query($conexao, $sql)){
            $_SESSION ["id"] = $result ["id"];
            $_SESSION ["nome"] = $result ["nome"];
+           $_SESSION ["email"] = $result ["email"];
           echo"<script language='javascript' type='text/javascript'>
           alert('cadastro feito com sucesso');window.location
           .href='index.php';</script>";
@@ -41,10 +42,8 @@
       }
     }
       ?>
-    
-    </div>
-</body>
-<!DOCTYPE html><!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <link rel="icon" href="imgs/pizza.png" type="image/x-icon">
@@ -57,7 +56,7 @@
 <div class="top">
   <div class="logo">
     <a href="index.php">
-        <img src="imgs/pizza.png">
+        <img src="imgs/logo_transparente.png">
       </a>
     </div>
     <div class="paginas">

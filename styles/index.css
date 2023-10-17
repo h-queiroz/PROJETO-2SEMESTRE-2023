@@ -9,9 +9,8 @@ body{
     background-size: 25%;
 }
 
-.logo a img{
-  width: 75px;
-  
+.logo img{
+  width: 200px;
 }
 
 .paginas a{
@@ -26,11 +25,33 @@ body{
 
 .paginas {
   position: absolute;
-  top: 45px;
-  right: 30px;
+  top: 20px;
   font-size: 40px;
+  left: 39%;
+
 }
 
+/* este codigo e para quando passar a fiquar cinza */
+.paginas a:hover{
+  background-color: gray;
+  transition: all 0.3s;
+  text-decoration: none; 
+  border-radius: 5px;
+
+}
+
+.login {
+  display: inline;
+  margin-left: 250px;
+
+}
+
+
+/* logo da pizza */
+.logo img{
+  width: 200px;
+  display: flex;
+}
 .image img{
 width: 700px;
 background-color: black;
@@ -56,3 +77,10 @@ transform: translate(-50%, -50%);
   bottom: 30px;
   font-family: "DK Midnight Chalker";
 }
+
+.logo{
+  cursor: pointer;
+  display: inline-block;
+  
+}
+

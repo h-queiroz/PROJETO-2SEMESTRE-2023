@@ -1,58 +1,84 @@
 @font-face {
-    font-family: 'DK Midnight Chalker';
-    src: url('../DK Midnight Chalker.otf') format('opentype');
-  }
-  
-  
-  body{
-      background-image: url("../imgs/black-bg.jpg");
-      background-size: 25%;
-  
-  }
-  .paginas a{
-    color:white;
-    text-decoration: none;
-    display: inline;
-    justify-content: center;
-    padding: 3px;
-    font-family: "DK Midnight Chalker";
-  
-  }
-  .paginas {
-    position: absolute;
-    top: 45px;
-    right: 30px;
-    font-size: 40px;
-  }
-  /* este codigo e para quando passar a fiquar cinza */
-  .paginas :hover{
-    background-color: gray;
-    transition: all 0.3s;
-    text-decoration: none; 
-    border-radius: 5px;
-  
-  }
-  
-  .login{
-    display: inline;
-    margin-left: 250px;
-  }
-  
-  .cadastro{
-    display: inline;
-  
-  }
-  
-  /* logo da pizza */
-  .logo img{
-    width: 75px;
-    display: flex;
-    cursor: pointer;
-  }
+  font-family: 'DK Midnight Chalker';
+  src: url('../DK Midnight Chalker.otf') format('opentype');
 
-  h1, p{
-      font-size: 30px;
-      font-family: "DK Midnight Chalker";
-      color: white;
-  }
+}
 
+
+body{
+    background-image: url("../imgs/black-bg.jpg");
+    background-size: 25%;
+}
+
+.paginas a{
+  color:white;
+  text-decoration: none;
+  display: inline;
+  justify-content: center;
+  padding: 3px;
+  font-family: "DK Midnight Chalker";
+
+}
+
+.paginas {
+  position: absolute;
+  top: 20px;
+  font-size: 40px;
+  left: 39%;
+
+}
+
+/* este codigo e para quando passar a fiquar cinza */
+.paginas a:hover{
+  background-color: gray;
+  transition: all 0.3s;
+  text-decoration: none; 
+  border-radius: 5px;
+
+}
+
+.login {
+  display: inline;
+  margin-left: 250px;
+
+}
+
+
+/* logo da pizza */
+.logo img{
+  width: 200px;
+  display: flex;
+}
+
+.logo{
+  cursor: pointer;
+  display: inline-block;
+  
+}
+.texto{
+  display:block;
+  justify-content:center;
+  align-items:center;
+  color: white;
+  left: 50%;
+  top: 50%;
+
+}
+
+  p, h1{
+  font-size: 30px;
+  font-family: "DK Midnight Chalker";
+}
+
+.direitos-autorais{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-family: "DK Midnight Chalker";
+  font-size: 20px;
+
+}
