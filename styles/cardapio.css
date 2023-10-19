@@ -66,12 +66,23 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
-.texto {
-  font-size: 75px;
+.texto h1 {
+  font-size: 50px;
   color:white;
   text-align: center;
   top: 20px;
   right: 600px;
   bottom: 280px;
   font-family: "DK Midnight Chalker";
+}
+
+ .texto {
+  font-family: "DK Midnight Chalker";
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.pizza{
+  
 }

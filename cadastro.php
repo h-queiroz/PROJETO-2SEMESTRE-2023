@@ -1,6 +1,5 @@
 <?php
   session_start();
-    if(isset($_SESSION)){
 
       include "conexao.php";
       //criando uma variavel com o valor cadastrado
@@ -40,7 +39,6 @@
         }
         mysqli_close($conexao);
       }
-    }
       ?>
 
 <!DOCTYPE html>

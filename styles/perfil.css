@@ -43,7 +43,6 @@ body{
 
 }
 
-
 /* logo da pizza */
 .logo img{
   width: 200px;
@@ -55,19 +54,27 @@ body{
   display: inline-block;
   
 }
+
 .texto{
-  display:block;
-  justify-content:center;
-  align-items:center;
+  position: absolute;
   color: white;
-  left: 50%;
-  top: 50%;
+  left: 35%;
+  top: 30%;
+  width: 400px;
+  height: 300px;
+  border-radius: 30px;
+  text-align: center;
+  transform: translate(-35%, -30%,);
+  background-color: black;
 
 }
 
-  p, h1{
+
+
+p, h1{
   font-size: 30px;
   font-family: "DK Midnight Chalker";
+
 }
 
 .direitos-autorais{

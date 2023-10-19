@@ -78,11 +78,14 @@ if(isset($_POST['email'])||isset($_POST['senha'])){
   <form action="login.php" method="post">
   <h1>Login</h1>
   <h2>E-mail</h2>
-  <input type="email" name="email" placeholder="Digite seu E-mail">
+  <input type="email" name="email" placeholder="">
   <h2>Senha</h2>
-  <input type="password" name="senha" placeholder="Digite sua Senha">
-  <input type="submit" name="submit">
+  <input type="password" name="senha" placeholder="">
+  <div class="submit">
+    <input type="submit" name="submit">
+    <a href="cadastro.php">Não possui uma conta?</a>
+  </div>
     </div>
-</main>
+  </main>
 </body>
 </html>

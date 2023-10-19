@@ -1,7 +1,7 @@
 <?php
     $servidor="localhost";
     $usuario="root";
-    $senha="";
+    $senha="1234";
     $db="Bonnadica";
 
     $conexao=mysqli_connect($servidor, $usuario, $senha, $db);

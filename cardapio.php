@@ -1,7 +1,12 @@
 <?php
-session_start();
-include_once "conexao.php";
-?>
+  session_start();
+  include "conexao.php";
+  $pizza = "SELECT id, nome, ingredientes, preço from pizza";
+  $result = $conexao->query($pizza);
+  
+  $conexao->close();
+  ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -43,9 +48,18 @@ include_once "conexao.php";
 <hr>
 <div class="texto">
   <?php if(!isset($_SESSION['id'])) { ?>
-    <p>faça o cadastro ou login para ver o cadarpio</p> 
+    <h1>faça o cadastro ou login para ver o cadarpio</h1> 
   <?php } else{ ?>
-    <p>Cardápio</p>
+    <h1>Cardápio</h1>
+    <p>
+      <?php 
+      foreach ($result as $result) {?>
+      <div class="pizza">
+        <?php echo "id da pizza:" . $result['id'] . "</br>Nome da pizza:" . $result['nome'] . "</br>ingredientes:" . $result['ingredientes'] . "</br>preço:" . $result['preço']; } ?>
+        </div>
+    </p>
+
+
   <?php } ?>
 </div>
 </body>
