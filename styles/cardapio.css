@@ -79,14 +79,11 @@ transform: translate(-50%, -50%);
  .texto {
   font-family: "DK Midnight Chalker";
   color: white;
-  text-align: center;
+  text-align: left;
   font-size: 25px;
+  
 }
 
 .pizza{
-  text-align: left;
-  padding-top: 50px;
-  height: 500px;  
-  display: flex;
-  justify-content: center;  
+ 
 }

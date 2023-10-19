@@ -51,13 +51,14 @@
     <h1>faça o cadastro ou login para ver o cadarpio</h1> 
   <?php } else{ ?>
     <h1>Cardápio</h1>
-    <p>
+    
       <?php 
       foreach ($result as $result) {?>
       <div class="pizza">
-        <?php echo "id da pizza:" . $result['id'] . "</br>Nome da pizza:" . $result['nome'] . "</br>ingredientes:" . $result['ingredientes'] . "</br>preço:" . $result['preço']; } ?>
-        </div>
-    </p>
+        <img src="imgs/calabreza.jpg" width="250px"/>
+        <?php echo  "</br>Sabor:  " . $result['nome'] . "</br>ingredientes:  " . $result['ingredientes'] . "</br>preço:  " . $result['preço']; } ?>
+      </div>
+    
 
 
   <?php } ?>
