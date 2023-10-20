@@ -1,10 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `bonnadica` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `bonnadica`;
 -- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: bonnadica
 -- ------------------------------------------------------
--- Server version	8.1.0
+-- Server version	5.5.5-10.4.27-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,9 +21,9 @@ USE `bonnadica`;
 
 DROP TABLE IF EXISTS `pizza`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8*/;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `pizza` (
-  `id` int NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) DEFAULT NULL,
   `ingredientes` varchar(200) DEFAULT NULL,
   `preço` float DEFAULT NULL,
@@ -39,7 +37,7 @@ CREATE TABLE `pizza` (
 
 LOCK TABLES `pizza` WRITE;
 /*!40000 ALTER TABLE `pizza` DISABLE KEYS */;
-INSERT INTO `pizza` VALUES (1,'calabreza','2 xícaras cha de farinha de trigo 1 colher sopa de fermento em pó meia colher cha de sal 1 xicara cha de água 4 colheres sopa de oleo 1 xicara cha de molho de tomate 300 g de linguica calabresa  ',49.99),(2,'queijo','2 xícaras (chá) de farinha de trigo 1 colher (sopa) de fermento em pó meia colher (chá) de sal 1 xícara (chá) de água 4 colheres (sopa) de óleo 1 xícara (chá) de molho de tomate 1 unidade de queijo   ',49.99),(3,'portuguesa','2 xícaras chá de farinha de trigo, 1colher sopa de fermento em pó ,meia colher chá de sal ,1 xícara chá de água, 4 colheres sopa de óleo, 150g de queijo muçarela, 50g de presunto ,1tomate em rodelas,',49.99);
+INSERT INTO `pizza` VALUES (1,'Calabresa','calabresa e cebola',49.99),(2,'Mussarela','mussarela e tomate',49.99),(3,'Portuguesa','mussarela, ovos, presunto e cebola',49.99);
 /*!40000 ALTER TABLE `pizza` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -49,9 +47,9 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `usuarios`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usuarios` (
-  `id` int NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) DEFAULT NULL,
   `email` varchar(50) NOT NULL,
   `senha` varchar(255) DEFAULT NULL,
@@ -78,4 +76,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-19  0:32:31
+-- Dump completed on 2023-10-20 10:26:07
