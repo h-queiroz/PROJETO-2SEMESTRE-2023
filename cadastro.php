@@ -1,48 +1,48 @@
 <?php
-
   session_start();
 
+  if($_POST){
     require_once "conexao.php";
-  //criando uma variavel com o valor cadastrado
+    //criando uma variavel com o valor cadastrado
       $email=$_POST['email'];
       $nome=$_POST['nome'];
       $senha=$_POST['senha'];
-      
+
     //verificando o email
     $sql = "SELECT * from usuarios where email = '$email'";
     $select = mysqli_query($conexao, $sql);
     $result = mysqli_fetch_array($select);
-    
+
     //se existir outro email igual nao roda.
     if($result['email'] == $email){
       echo "nome ja existe";
     }
     //se não, roda o codigo.
     else {
-        //criptografando a senha
-        $senha=password_hash($senha, PASSWORD_DEFAULT);
-        //criando o valor no banco de dados
-        $sql="INSERT INTO usuarios (email, nome, senha) VALUES ('$email', '$nome', '$senha')";
-        
-        
-        //se der certo mostrar cadastrado feito com sucesso
-         if(mysqli_query($conexao, $sql)){
-           $_SESSION ["id"] = $result ["id"];
-           $_SESSION ["nome"] = $result ["nome"];
-           $_SESSION ["email"] = $result ["email"];
-          echo"<script language='javascript' type='text/javascript'>
-          alert('cadastro feito com sucesso');window.location
-          .href='index.php';</script>";
+      //criptografando a senha
+      $senha=password_hash($senha, PASSWORD_DEFAULT);
+      //criando o valor no banco de dados
+      $sql="INSERT INTO usuarios (email, nome, senha) VALUES ('$email', '$nome', '$senha')";
 
-        }
-        //se der errado mostrar o erro
-        else{
-          echo "Error: ".$sql."<br>".mysqli_error($conexao);
-        }
-        mysqli_close($conexao);
+
+      //se der certo mostrar cadastrado feito com sucesso
+       if(mysqli_query($conexao, $sql)){
+         $_SESSION ["id"] = $result ["id"];
+         $_SESSION ["nome"] = $result ["nome"];
+         $_SESSION ["email"] = $result ["email"];
+        echo"<script language='javascript' type='text/javascript'>
+        alert('cadastro feito com sucesso');window.location
+        .href='index.php';</script>";
+
       }
-      ?>
-
+      //se der errado mostrar o erro
+      else{
+        echo "Error: ".$sql."<br>".mysqli_error($conexao);
+      }
+      mysqli_close($conexao);
+    }
+  }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
