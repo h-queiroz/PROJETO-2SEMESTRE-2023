@@ -29,7 +29,7 @@ if(isset($_POST['email'])||isset($_POST['senha'])){
     //print_r($_SESSION);
     header('location:index.php');
   }else{
-    echo"<script language='javascript' type='text/javascript'>
+    echo"<script language='javascript'>
     alert('email e/ou senha incorretos');</script>";
   }
 }
