@@ -56,12 +56,15 @@
       foreach ($result as $pizza) {?>
 
       <div class="pizza">
-        <img src="imgs/calabreza.jpg" width="250px" alt=""/>
-        <div class="box">
-          <p> <?php echo  "</br>Sabor:  " . $pizza['nome'] . "</br>ingredientes:  " . $pizza['ingredientes'] . "</br>preço:  " . $pizza['preço'];
-        } ?> </p>
-        </div>
+
+        <span>sabor: <?php echo $pizza["nome"]?></span>
+        <br>
+        <span>ingredientes: <?php echo $pizza["ingredientes"]?></span>
+        <br>
+        <span>valor: <?php echo $pizza ["preço"]?></span>
+
       </div>
+    <?php } ?>
 
 
 

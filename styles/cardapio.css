@@ -32,7 +32,7 @@ body{
 .paginas a:hover{
   background-color: gray;
   transition: all 0.3s;
-  text-decoration: none; 
+  text-decoration: none;
   border-radius: 5px;
 
 }
@@ -53,7 +53,7 @@ body{
 .logo{
   cursor: pointer;
   display: inline-block;
-  
+
 }
 
 .image img{
@@ -81,18 +81,16 @@ transform: translate(-50%, -50%);
   color: white;
   text-align: left;
   font-size: 25px;
-  
+
 }
 
-.pizza{
-  position: absolute;
-}
+
 
 .pizza p{
   display: flex;
   text-align: left;
   justify-items:left;
-  
+
 
 }
 

@@ -3,10 +3,17 @@
   src: url('../DK Midnight Chalker.otf') format('opentype');
 }
 body{
-  background-image: url("../imgs/black-bg.jpg");
+  background-image: url("../imgs/fundo-amarelo.jpg");
   background-size: 25%;
   font-family: 'DK Midnight Chalker';
+  margin: 0;
 }
+
+hr{
+  margin:0;
+}
+
+
 
 .logo{
   width: 75px;
@@ -17,11 +24,19 @@ body{
 }
 
 a{
-   color: white;
+
    font-size: 35px;
 
  }
+.topo{
+  /* background-color: black; */
+  padding-bottom: 15px;
+}
+
+
+
  .links-lado-direito{
+
    display: inline-block;
    position: absolute;
    top: 30px;
@@ -30,28 +45,44 @@ a{
 
  }
  .links-lado-direito a{
+   color:black;
    margin-left: 10px;
    font-size: 50px;
  }
  .links-lado-esquerdo{
       height: 300px;
-    background-size: cover;
-  
+    display: inline-grid;
+
+
+
   position: relative;
-  top:40px ;
-background-image: url("../imgs/fundo-madeira.jpg");
+  top:-360px ;
+
+
  }
 .links-lado-esquerdo a{
+  color: black;
   display:inline;
   margin-left: 30px;
   font-size: 52px;
 margin-bottom: 8px;
 position: relative;
-top: 125px;
+top: 75px;
 }
 .links-lado-esquerdo a img{
 
-  width:30px ;
+  width:40px ;
+  position: relative;
+  top: 7px;
   margin-right: 8px ;
 
 }
+
+
+ .motoca{
+   width: 370px;
+   margin-left: 30px;
+   border-radius: 30px;
+   margin-top: 100px;
+
+ }
