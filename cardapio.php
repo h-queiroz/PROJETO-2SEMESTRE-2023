@@ -44,19 +44,23 @@
     <?php } ?>
 
   </div>
-</header>      
+</header>
 <hr>
 <div class="texto">
   <?php if(!isset($_SESSION['id'])) { ?>
-    <h1>faça o cadastro ou login para ver o cadarpio</h1> 
+    <h1>faça o cadastro ou login para ver o cadarpio</h1>
   <?php } else{ ?>
     <h1>Cardápio</h1>
     
-      <?php 
+      <?php
       foreach ($result as $result) {?>
+      
       <div class="pizza">
-        <img src="imgs/calabreza.jpg" width="250px"/>
-        <?php echo  "</br>Sabor:  " . $result['nome'] . "</br>ingredientes:  " . $result['ingredientes'] . "</br>preço:  " . $result['preço']; } ?>
+        <img src="imgs/calabreza.jpg" width="250px" alt=""/>
+        <div class="box">
+          <p> <?php echo  "</br>Sabor:  " . $result['nome'] . "</br>ingredientes:  " . $result['ingredientes'] . "</br>preço:  " . $result['preço'];
+        } ?> </p>
+        </div>
       </div>
     
 

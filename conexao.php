@@ -1,8 +1,8 @@
 <?php
     $servidor="localhost";
     $usuario="root";
-    $senha="";
-    $db="Bonnadica";
+    $senha="1234";
+    $db="bonnadica";
 
     $conexao=mysqli_connect($servidor, $usuario, $senha, $db);
 

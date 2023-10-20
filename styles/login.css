@@ -4,7 +4,6 @@
 
 }
 
-
 body{
     background-image: url("../imgs/black-bg.jpg");
     background-size: 25%;
@@ -67,44 +66,31 @@ body{
     position: absolute;
     background-color:rgba(0, 0, 0, 0.623);
     font-family: 'DK Midnight Chalker';
-    flex-direction: column;
+
 }
 
 h1{
   color: white;
   font-size: 300%;
-  padding-right: 55%;
-
+  padding-right: 52%;
+  text-decoration: underline;
   }
 
 h2{
   font-size: 200%;
-  padding-right: 55%;
+  padding-right: 52%;
   color: white;
 }
 
 .box input{
   margin-top: 15px;
-  padding:0 5px;
   background-color: transparent;
-  border:none;
+  border: none;
   border-bottom: 2px solid #e1e1e1;
   outline: none;
   color: #fff;
-  flex-direction: column;
   text-align: left;
   font-size: 175%;
-
-}
-
-
-
-.box input ::after{
-  content: "";
-  width: 80px;
-  height: 1px;
-  background-color: #fff;
-  display: block;
 
 }
 
@@ -112,9 +98,16 @@ h2{
   font-size: 30px;
   color: white;
   text-decoration: none;
-  padding-left: 43px;
+  padding-left: 40px;
+  display: inline;
+
 }
 
 .submit {
   text-align: center;
+  padding: 15px;
+
 }
+
+
+

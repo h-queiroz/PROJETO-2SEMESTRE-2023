@@ -1,11 +1,14 @@
 <?php
 session_start();
 if(isset($_POST['email'])||isset($_POST['senha'])){
+
   //conexão com o mysql
   include "conexao.php";
+
   //criando uma variavel com o valor cadastrado
   $email=$_POST['email'];
   $senha=$_POST['senha'];
+  
   //pegando os valores do banco de dados
   $sql="SELECT * FROM usuarios where email = ?";
 
@@ -83,8 +86,8 @@ if(isset($_POST['email'])||isset($_POST['senha'])){
   <input type="password" name="senha" placeholder="">
   <div class="submit">
     <input type="submit" name="submit">
-    <a href="cadastro.php">Não possui uma conta?</a>
   </div>
+  <a href="cadastro.php">Não possui uma conta?</a>
     </div>
   </main>
 </body>
