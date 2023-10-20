@@ -85,5 +85,24 @@ transform: translate(-50%, -50%);
 }
 
 .pizza{
- 
+  position: absolute;
+}
+
+.pizza p{
+  display: flex;
+  text-align: left;
+  justify-items:left;
+  
+
+}
+
+.box{
+  width: 150px;
+  position: absolute;
+  display: inline;
+}
+
+.box hover{
+
+  background-color: red;
 }

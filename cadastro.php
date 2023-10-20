@@ -1,11 +1,14 @@
 <?php
-  session_start();
 
-      include "conexao.php";
-      //criando uma variavel com o valor cadastrado
-      $email=$_POST['email'];
-      $nome=$_POST['nome'];
-      $senha=$_POST['senha'];
+  session_start();
+  if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["senha"])){
+
+    require_once "conexao.php";
+  //criando uma variavel com o valor cadastrado
+  $email=$_GET['email'];
+      $nome=$_GET['nome'];
+      $senha=$_GET['senha'];
+      
     //verificando o email
     $sql = "SELECT * from usuarios where email = '$email'";
     $select = mysqli_query($conexao, $sql);
@@ -35,10 +38,11 @@
         }
         //se der errado mostrar o erro
         else{
-            echo "Error: ".$sql."<br>".mysqli_error($conexao);
+          echo "Error: ".$sql."<br>".mysqli_error($conexao);
         }
         mysqli_close($conexao);
       }
+    }
       ?>
 
 <!DOCTYPE html>
@@ -54,31 +58,34 @@
 <div class="top">
   <div class="logo">
     <a href="index.php">
-        <img src="imgs/logo_transparente.png">
-      </a>
+      <img src="imgs/logo_transparente.png" alt="logo">
+    </a>
+  </div>
+  <div class="paginas">
+    <a href="cardapio.php">Cardapio</a>
+    <a href="contato.php">Contato</a>
+    <a href="sobre.php">Sobre</a>
+    <div class="login">
+      <a href="login.php">Login</a>
     </div>
-    <div class="paginas">
-      <a href="cardapio.php">Cardapio</a>
-      <a href="contato.php">Contato</a>
-      <a href="sobre.php">Sobre</a>
-      <div class="login">
-        <a href="login.php">Login</a>
-      </div>
-      <div class="cadastro">
-        <a href="cadastro.php">Criar Conta</a>
-      </div>
-        </div>
-      </div>
-      <hr>
-    <div class="box">
-        <h1>Cadastro</h1>
-        <h2>Nome</h2>
-        <form action="cadastro.php" method="post">
-          <input type="text" name="nome" placeholder="Digite seu Nome">
-          <h2>E-mail</h2>
-          <input type="email" name="email"  placeholder="Digite seu E-mail">
-          <h2>Senha</h2>
-          <input type="password" name="senha"  placeholder="Digite sua Senha">
-          <input type="submit">
-        </form>
-  </html>
+    <a href="cadastro.php">Criar Conta</a>
+  </div>
+</div>
+<hr>
+<div class="box">
+  <h1>Cadastro</h1>
+  <h2>Nome</h2>
+  <form action="cadastro.php" method="post">
+    <input type="text" name="nome" placeholder="">
+    <h2>E-mail</h2>
+    <input type="email" name="email"  placeholder="">
+    <h2>Senha</h2>
+    <input type="password" name="senha"  placeholder="">
+    <div class="submit">
+      <input type="submit">
+    </div>
+    <a href="login">Já possui uma conta?</a>
+  </form>
+</div>
+</body>
+</html>
