@@ -1,13 +1,12 @@
 <?php
 
   session_start();
-  if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["senha"])){
 
     require_once "conexao.php";
   //criando uma variavel com o valor cadastrado
-  $email=$_GET['email'];
-      $nome=$_GET['nome'];
-      $senha=$_GET['senha'];
+      $email=$_POST['email'];
+      $nome=$_POST['nome'];
+      $senha=$_POST['senha'];
       
     //verificando o email
     $sql = "SELECT * from usuarios where email = '$email'";
@@ -42,7 +41,6 @@
         }
         mysqli_close($conexao);
       }
-    }
       ?>
 
 <!DOCTYPE html>

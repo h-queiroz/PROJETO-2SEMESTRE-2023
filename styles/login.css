@@ -98,16 +98,27 @@ h2{
   font-size: 30px;
   color: white;
   text-decoration: none;
-  padding-left: 40px;
-  display: inline;
+  display: inline-block;
 
 }
 
 .submit {
   text-align: center;
-  padding: 15px;
-
+  cursor: pointer;
+  display: inline-block;
+  padding-inline: 200px;
 }
 
+input {
+  cursor: pointer;
+  
+}
 
+input[type=submit]{
+  cursor: pointer;
+}
 
+input[type=submit] :hover{
+  background-color: gray;
+  transition: all 0.3s;
+}
