@@ -1,9 +1,9 @@
 <?php
   session_start();
   include "conexao.php";
-  $pizza = "SELECT id, nome, ingredientes, preço from pizza";
-  $result = $conexao->query($pizza);
-  
+  $query = "SELECT id, nome, ingredientes, preço from pizza";
+  $result = $conexao->query($query);
+
   $conexao->close();
   ?>
 
@@ -16,7 +16,7 @@
   <link rel="icon" href="imgs/pizza.png" type="image/x-icon">
   <title>Pizzaria Bonna Dica</title>
 </head>
-  
+
 <body>
 <header class="top">
   <div class="logo">
@@ -51,18 +51,18 @@
     <h1>faça o cadastro ou login para ver o cadarpio</h1>
   <?php } else{ ?>
     <h1>Cardápio</h1>
-    
+
       <?php
-      foreach ($result as $result) {?>
-      
+      foreach ($result as $pizza) {?>
+
       <div class="pizza">
         <img src="imgs/calabreza.jpg" width="250px" alt=""/>
         <div class="box">
-          <p> <?php echo  "</br>Sabor:  " . $result['nome'] . "</br>ingredientes:  " . $result['ingredientes'] . "</br>preço:  " . $result['preço'];
+          <p> <?php echo  "</br>Sabor:  " . $pizza['nome'] . "</br>ingredientes:  " . $pizza['ingredientes'] . "</br>preço:  " . $pizza['preço'];
         } ?> </p>
         </div>
       </div>
-    
+
 
 
   <?php } ?>
