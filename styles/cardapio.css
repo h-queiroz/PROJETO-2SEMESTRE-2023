@@ -1,14 +1,19 @@
 @font-face {
   font-family: 'DK Midnight Chalker';
   src: url('../DK Midnight Chalker.otf') format('opentype');
-
 }
 
 
 body{
-    background-image: url("../imgs/black-bg.jpg");
-    background-size: 25%;
+  background-image: url("../imgs/black-bg.jpg");
+  /* background-color: #0b1218; */
+  /* background-size: 25%; */
+  transition: all 0.3s linear;
 }
+
+/* body:hover{
+  background-color: #ffd702;
+} */
 
 .paginas a{
   color:white;
@@ -17,7 +22,10 @@ body{
   justify-content: center;
   padding: 3px;
   font-family: "DK Midnight Chalker";
+}
 
+a, h1, span{
+  transition: 0.2s all linear;
 }
 
 .paginas {
@@ -25,7 +33,6 @@ body{
   top: 20px;
   font-size: 40px;
   left: 39%;
-
 }
 
 /* este codigo e para quando passar a fiquar cinza */
@@ -34,13 +41,11 @@ body{
   transition: all 0.3s;
   text-decoration: none;
   border-radius: 5px;
-
 }
 
 .login {
   display: inline;
   margin-left: 250px;
-
 }
 
 
@@ -53,17 +58,16 @@ body{
 .logo{
   cursor: pointer;
   display: inline-block;
-
 }
 
 .image img{
-width: 700px;
-background-color: black;
-border-radius: 30px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+  width: 700px;
+  background-color: black;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .texto h1 {
@@ -81,7 +85,6 @@ transform: translate(-50%, -50%);
   color: white;
   text-align: left;
   font-size: 25px;
-
 }
 
 
@@ -90,8 +93,6 @@ transform: translate(-50%, -50%);
   display: flex;
   text-align: left;
   justify-items:left;
-
-
 }
 
 .box{
@@ -100,7 +101,48 @@ transform: translate(-50%, -50%);
   display: inline;
 }
 
-.box hover{
+.top{
+  position: relative;
+}
 
-  background-color: red;
+.theme-switcher{
+  background-color: #7269af;
+  /* background-color: #efcc00; */
+  width: 80px;
+  height: 40px;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  border: white 2px solid;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
+}
+
+.theme-switcher .ball{
+  background-color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 0.2s ease-out;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.theme-switcher .ball img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-out;
+}
+
+hr{
+  border-color: white;
 }

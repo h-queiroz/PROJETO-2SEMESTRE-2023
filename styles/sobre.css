@@ -1,13 +1,16 @@
 @font-face {
   font-family: 'DK Midnight Chalker';
   src: url('../DK Midnight Chalker.otf') format('opentype');
+}
 
+body, a, p, h1{
+  transition: 0.3s all ease-out;
 }
 
 
 body{
     background-image: url("../imgs/black-bg.jpg");
-    background-size: 25%;
+    /* background-size: 25%; */
 }
 
 .paginas a{
@@ -32,7 +35,7 @@ body{
 .paginas a:hover{
   background-color: gray;
   transition: all 0.3s;
-  text-decoration: none; 
+  text-decoration: none;
   border-radius: 5px;
 
 }
@@ -53,7 +56,7 @@ body{
 .logo{
   cursor: pointer;
   display: inline-block;
-  
+
 }
 
 .texto{
@@ -68,7 +71,7 @@ body{
 .texto p, h1{
   font-size: 30px;
   font-family: "DK Midnight Chalker";
-  
+
 }
 
 .direitos-autorais{
@@ -81,10 +84,63 @@ body{
   text-align: center;
   font-family: "DK Midnight Chalker";
   font-size: 20px;
-  
+
 }
 
 h1{
   text-align: center;
 }
 
+
+/* Mudanças feitas por Hector */
+/* Tudo abaixo é removível */
+/* Feito apenas com o intuito de teste */
+
+header{
+  position: relative;
+}
+
+.theme-switcher{
+  background-image: url("../imgs/night-sky.jpg");
+  background-size: 140px;
+  /* background-image: url("../imgs/sunny-sky.jpg");
+  background-size: 226px;
+  background-position-y: bottom;
+  background-position-x: center; */
+  width: 80px;
+  height: 40px;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  border: white 2px solid;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
+}
+
+.theme-switcher .ball{
+  /* background-color: white; */
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 0.2s ease-out;
+}
+
+.theme-switcher .ball img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-out;
+}
+
+hr{
+  border-color: white;
+}

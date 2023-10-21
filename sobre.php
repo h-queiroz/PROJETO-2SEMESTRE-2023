@@ -38,9 +38,14 @@
         <a href="cadastro.php">Criar Conta</a>
       </div>
     <?php } ?>
-
   </div>
-</header>      
+  <div class="theme-switcher">
+    <div class="ball">
+      <img src="imgs/moon2.png" width="30px">
+      <img src="imgs/sun2.png" width="25px">
+    </div>
+  </div>
+</header>
 <hr>
 <main class="texto">
   <h1 class="sobre">Nossa História</h1>
@@ -49,16 +54,17 @@
   <h1 class="historia">História da Pizza</h1>
 
   <p class="historia">A verdadeira historia da pizza ainda é um misterio, acredita-se que foram os egipcios os primeiros a criarem uma massa similar. Mas foram os italianos que deram um toque final acescentando tomate e queijo á massa no século XIX.
-      
+
     Com a chegada dos imigrantes italianos no Brasil em 1910 trouxeram a receita da pizza italiana. Inicialmente, os brasileiros não aderiram muito bem o novo prato porém, em 1950, a pizza se torna popular em todo paí
 
     Hoje, a pizza é tão parte da cultura brasileira quanto italiana. A cidade de São Paulo é a segunda cidade que mais consome pizza no mundo, perdendo apenas para a cidade de Nova Iorque
-      
+
     Para comemorar esse amor pela pizza em 1985, o dia 10 de julho foi escolhido como o dia Mundial da Pizza.
   </p>
 </main>
 <footer class="direitos-autorais">
   <p>Desde 2008 oferecendo a melhor experiência em pizza!</p>
 </footer>
+<script src="scripts/sobre.js"></script>
 </body>
 </html>

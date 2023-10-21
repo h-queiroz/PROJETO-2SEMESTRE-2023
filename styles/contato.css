@@ -4,7 +4,7 @@
 }
 body{
   background-image: url("../imgs/fundo-amarelo.jpg");
-  background-size: 25%;
+  /* background-size: 25%; */
   font-family: 'DK Midnight Chalker';
   margin: 0;
 }
