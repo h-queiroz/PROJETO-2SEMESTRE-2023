@@ -8,7 +8,7 @@ if(isset($_POST['email'])||isset($_POST['senha'])){
   //criando uma variavel com o valor cadastrado
   $email=$_POST['email'];
   $senha=$_POST['senha'];
-  
+
   //pegando os valores do banco de dados
   $sql="SELECT * FROM usuarios where email = ?";
 
@@ -47,7 +47,7 @@ if(isset($_POST['email'])||isset($_POST['senha'])){
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <title>Pizzaria Bonna Dica</title>
 </head>
-  
+
 <body>
 <header class="top">
   <div class="logo">
@@ -75,15 +75,15 @@ if(isset($_POST['email'])||isset($_POST['senha'])){
     <?php } ?>
 
   </div>
-</header>      
+</header>
 <hr>
 <div class="box">
   <form action="login.php" method="post">
   <h1>Login</h1>
   <h2>E-mail</h2>
-  <input type="email" name="email" placeholder="">
+  <input type="email" name="email" value="<?php echo (isset($_POST["email"]) && $_POST["email"]) ? $_POST["email"] : "" ?>">
   <h2>Senha</h2>
-  <input type="password" name="senha" placeholder="">
+  <input type="password" name="senha" value="<?php echo (isset($_POST["senha"]) && $_POST["senha"]) ? $_POST["senha"] : "" ?>">
   <div class="submit">
     <input type="submit" name="submit">
   </div>
