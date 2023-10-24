@@ -63,9 +63,9 @@
     <a href="cardapio.php">Cardapio</a>
     <a href="contato.php">Contato</a>
     <a href="sobre.php">Sobre</a>
-    <div class="login">
-      <a href="login.php">Login</a>
-    </div>
+  </div>
+  <div class="login">
+    <a href="login.php">Login</a>
     <a href="cadastro.php">Criar Conta</a>
   </div>
 </div>

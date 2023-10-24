@@ -11,10 +11,10 @@
 }
 
 body{
-    margin: 0px;
-    padding: 0px;
-    background-image: url("../imgs/black-bg.jpg");
-    background-size: 25%;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../imgs/black-bg.jpg");
+  background-size: 25%;
 }
 
 .paginas a, .login a{
@@ -26,7 +26,7 @@ body{
   font-family: "DK Midnight Chalker";
   top: 10px;
   font-size: 40px;
-
+  
 }
 
 .paginas {
@@ -37,6 +37,12 @@ body{
 }
 
 
+.login {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0,-50%);
+}
 
 
 
@@ -50,12 +56,6 @@ body{
   border-radius: 5px;
 }
 
-.login {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translate(0,-50%);
-}
 
 
 /* logo da pizza */

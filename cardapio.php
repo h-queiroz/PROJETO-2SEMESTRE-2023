@@ -23,11 +23,12 @@
     <a href="index.php">
       <img src="imgs/logo_transparente.png" alt="logo">
     </a>
+    </div> 
+    <div class="paginas">
+      <a href="cardapio.php">Cardapio</a>
+      <a href="contato.php">Contato</a>
+      <a href="sobre.php">Sobre</a>
     </div>
-  <div class="paginas">
-    <a href="cardapio.php">Cardapio</a>
-    <a href="contato.php">Contato</a>
-    <a href="sobre.php">Sobre</a>
 
     <?php if(isset($_SESSION['id'])){
       $usuario = $_SESSION['nome'];
@@ -42,9 +43,7 @@
         <a href="cadastro.php">Criar Conta</a>
       </div>
     <?php } ?>
-
-  </div>
-</header>
+</header>      
 <hr>
 <div class="texto">
   <h1>Cardápio</h1>
