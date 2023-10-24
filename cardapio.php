@@ -23,7 +23,7 @@
     <a href="index.php">
       <img src="imgs/logo_transparente.png" alt="logo">
     </a>
-    </div> 
+    </div>
     <div class="paginas">
       <a href="cardapio.php">Cardapio</a>
       <a href="contato.php">Contato</a>
@@ -43,11 +43,11 @@
         <a href="cadastro.php">Criar Conta</a>
       </div>
     <?php } ?>
-</header>      
+</header>
 <hr>
 <div class="texto">
   <h1>Cardápio</h1>
-  
+
       <?php
       foreach ($result as $pizza) {?>
 
@@ -58,15 +58,25 @@
         <span>ingredientes: <?php echo $pizza["ingredientes"]?></span>
         <br>
         <span>valor: <?php echo $pizza ["preço"]?></span>
+        <?php if(isset($_SESSION['id'])) { ?>
+        <form action="deletar-pizza.php" method="post">
+          <input type="text" name="id" value="<?php echo $pizza["id"] ?>">
+          <button type="submit">Deletar</button>
+        </form>
+      <?php } ?>
 
       </div>
     <?php } ?>
 
     <?php if(isset($_SESSION['id'])) { ?>
-      <a href="criar-pizza.php"> criar mais pizzas </a>
-      <a href="deletar-pizza.php">deletar pizza</a>
+      <a href="criar-pizza.php">
+      <div class="pizza adicionar">
+        <span>+</span>
+      </div>
+      </a>
+      <!-- <a href="deletar-pizza.php">deletar pizza</a> -->
     <?php } ?>
-    
+
 </div>
 </body>
 </html>

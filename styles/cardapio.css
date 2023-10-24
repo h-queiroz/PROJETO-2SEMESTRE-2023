@@ -27,7 +27,7 @@ body{
   font-family: "DK Midnight Chalker";
   top: 10px;
   font-size: 40px;
-  
+
 }
 
 .paginas {
@@ -92,22 +92,64 @@ transform: translate(-50%, -50%);
   color: white;
   text-align: left;
   font-size: 25px;
-
+  width: 80vw;
+  margin: auto;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
+.texto h1{
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
 
+.texto .pizza{
+  width: 400px;
+  margin: auto;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transform: scale(1.0);
+  transition: 0.3s all ease-out;
+}
+
+.texto .pizza:hover{
+  transform: scale(1.1);
+}
 
 .pizza p{
   display: flex;
   text-align: left;
   justify-items:left;
+}
 
-
+.pizza form input{
+  display: none;
 }
 
 .pizza a{
   color:white;
   text-decoration: none;
+}
+
+.pizza.adicionar{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pizza.adicionar span{
+  font-size: 50px;
+  width: 70px;
+  height: 70px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
 }
 
 .box{
@@ -117,6 +159,5 @@ transform: translate(-50%, -50%);
 }
 
 .box hover{
-
   background-color: red;
 }
