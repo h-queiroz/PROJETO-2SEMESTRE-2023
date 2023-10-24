@@ -7,6 +7,7 @@
 .top{
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 body{
@@ -16,7 +17,7 @@ body{
     background-size: 25%;
 }
 
-.paginas a{
+.paginas a, .login a{
   color:white;
   text-decoration: none;
   display: inline;
@@ -24,28 +25,36 @@ body{
   padding: 20px;
   font-family: "DK Midnight Chalker";
   top: 10px;
+  font-size: 40px;
 
 }
 
 .paginas {
-  font-size: 40px;
-  align-items: center;
-  padding-left: 280px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
+
+
 
 
 
 /* este codigo e para quando passar a fiquar cinza */
-.paginas a:hover{
+.paginas a:hover, .login a:hover{
   padding: 20px;
+  background-color: white;
   color: black;
   transition: all 0.3s;
   text-decoration: none; 
+  border-radius: 5px;
 }
 
 .login {
-  display: inline;
-  padding-left: 198px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0,-50%);
 }
 
 

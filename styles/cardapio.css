@@ -66,7 +66,7 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
-.texto h1 {
+.texto label {
   font-size: 50px;
   color:white;
   text-align: center;

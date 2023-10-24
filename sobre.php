@@ -25,6 +25,7 @@
     <a href="contato.php">Contato</a>
     <a href="sobre.php">Sobre</a>
 
+  </div>
     <?php if(isset($_SESSION['id'])){
       $usuario = $_SESSION['nome'];
       ?>
@@ -37,8 +38,7 @@
         <a href="login.php">Entrar</a>
         <a href="cadastro.php">Criar Conta</a>
       </div>
-    <?php } ?>
-  </div>
+      <?php } ?>
 </header>      
 <hr>
 <main class="texto">

@@ -1,7 +1,7 @@
 <?php
   session_start();
+    if($_POST){
 
-  if(isset($_SESSION['id'])){
     require_once "conexao.php";
     //criando uma variavel com o valor cmysql -u rooadastrado
       $ingredientes=$_POST['ingredientes'];
@@ -9,7 +9,6 @@
       $preço=$_POST['preço'];
 
     //verificando o ingredientes
-    $sql = "SELECT * from pizza where ingredientes = '$ingredientes'";
     $select = mysqli_query($conexao, $sql);
     $result = mysqli_fetch_array($select);
 
@@ -27,8 +26,7 @@
         echo "Error: ".$sql."<br>".mysqli_error($conexao);
       }
       mysqli_close($conexao);
-    }else{
-        header('location:index.php');
+
     }
 ?>
 <!DOCTYPE html>
@@ -60,13 +58,13 @@
 <hr>
 <div class="box">
   <h1>criar pizzas</h1>
-  <h2>Nome</h2>
+  <label>Nome</label>
   <form action="criar-pizza.php" method="post">
-    <input type="text" name="nome" placeholder="">
-    <h2>ingredientes</h2>
-    <input type="text" name="ingredientes"  placeholder="">
-    <h2>preço</h2>
-    <input type="number" name="preço"  placeholder="">
+    <input type="text" name="nome" required placeholder="">
+    <label>ingredientes</label>
+    <input type="text" name="ingredientes" required  placeholder="">
+    <label>preço</label>
+    <input type="number" step="0.01" name="preço"  required  placeholder="">
     <div class="submit">
       <input type="submit">
     </div>

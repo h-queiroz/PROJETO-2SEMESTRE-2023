@@ -1,32 +1,28 @@
 <?php
 session_start();
-
 include "conexao.php";
+if($_POST){
+  
   //criando uma variavel com o valor cadastrado
   $nome=$_POST['nome'];
   $id=$_POST['id'];
-
-
-
-  $sql="DELETE * FROM pizza where id = '$id' and nome = '$nome'";
-  //pegando os valores do banco de dados
   
+  //pegando os valores do banco de dados
+  $sql="DELETE FROM pizza where id = '$id'";
+  
+  //verificndo se a 
   $result = $conexao->query($sql);
-
-  echo "<pre>";
-  print_r($result);
-  echo"</pre>";
-
+  
   //verificando o id e nome
-    if(mysqli_query($conexao, $sql)){
-    "<script language='javascript' type='text/javascript'>
-    alert('pizza deletada com sucesso');window.location
-    .href='cardapio.php';</script>";
+  if($result){
+    echo"<script language='javascript' type='text/javascript'>
+      alert('pizza deletada com sucesso');window.location.href='cardapio.php';</script>";
   }else{
     echo"<script language='javascript'>
     alert('pizza não encontrada');</script>";
   }
-
+  
+}
   ?>
 
 <!DOCTYPE html>
@@ -73,9 +69,9 @@ include "conexao.php";
 <div class="box">
   <form action="deletar-pizza.php" method="post">
   <h1>deletar</h1>
-  <h2>nome</h2>
+  <label>nome</label>
   <input type="nome" name="nome" placeholder="">
-  <h2>id</h2>
+  <label>id</label>
   <input type="text" name="id" placeholder="">
   <div class="submit">
     <input type="submit" name="Deletar" value="Deletar" placeholder="">

@@ -72,12 +72,12 @@
 <hr>
 <div class="box">
   <h1>Cadastro</h1>
-  <h2>Nome</h2>
+  <label>Nome</label>
   <form action="cadastro.php" method="post">
     <input type="text" name="nome" placeholder="">
-    <h2>E-mail</h2>
+    <label>E-mail</label>
     <input type="email" name="email"  placeholder="">
-    <h2>Senha</h2>
+    <label>Senha</label>
     <input type="password" name="senha"  placeholder="">
     <div class="submit">
       <input type="submit">

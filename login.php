@@ -80,9 +80,9 @@ if(isset($_POST['email'])||isset($_POST['senha'])){
 <div class="box">
   <form action="login.php" method="post">
   <h1>Login</h1>
-  <h2>E-mail</h2>
+  <label>E-mail</label>
   <input type="email" name="email" placeholder="">
-  <h2>Senha</h2>
+  <label>Senha</label>
   <input type="password" name="senha" placeholder="">
   <div class="submit">
     <input type="submit" name="submit">
