@@ -48,11 +48,12 @@ body{
 
 /* este codigo e para quando passar a fiquar cinza */
 .paginas a:hover, .login a:hover{
-  background-color: gray;
+  padding: 20px;
+  background-color: white;
+  color: black;
   transition: all 0.3s;
-  text-decoration: none;
+  text-decoration: none; 
   border-radius: 5px;
-
 }
 
 /* logo da pizza */

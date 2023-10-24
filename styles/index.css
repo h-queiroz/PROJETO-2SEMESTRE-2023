@@ -58,11 +58,11 @@ body{
 
 /* logo da pizza */
 .logo img{
-  width: 10%;
+  width: 15%;
   display: flex;
 }
 .image img{
-width: 700px;
+width: 70%;
 background-color: black;
 border-radius: 30px;
 position: absolute;
