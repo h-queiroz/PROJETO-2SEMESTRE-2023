@@ -94,6 +94,11 @@ transform: translate(-50%, -50%);
 
 }
 
+.pizza a{
+  color:white;
+  text-decoration: none;
+}
+
 .box{
   width: 150px;
   position: absolute;

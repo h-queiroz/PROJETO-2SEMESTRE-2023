@@ -109,11 +109,6 @@ h2{
   padding-inline: 200px;
 }
 
-input {
-  cursor: pointer;
-  
-}
-
 input[type=submit]{
   cursor: pointer;
 }

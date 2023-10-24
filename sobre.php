@@ -38,7 +38,6 @@
         <a href="cadastro.php">Criar Conta</a>
       </div>
     <?php } ?>
-
   </div>
 </header>      
 <hr>
@@ -57,8 +56,8 @@
     Para comemorar esse amor pela pizza em 1985, o dia 10 de julho foi escolhido como o dia Mundial da Pizza.
   </p>
 </main>
-<footer class="direitos-autorais">
-  <p>Desde 2008 oferecendo a melhor experiência em pizza!</p>
+<!--<footer class="direitos-autorais">
+  <p>Desde 2008 oferecendo a melhor experiência em pizza!</p>-->
 </footer>
 </body>
 </html>

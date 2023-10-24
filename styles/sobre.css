@@ -4,8 +4,14 @@
 
 }
 
+.top{
+  display: flex;
+  align-items: center;
+}
 
 body{
+    margin: 0px;
+    padding: 0px;
     background-image: url("../imgs/black-bg.jpg");
     background-size: 25%;
 }
@@ -15,38 +21,38 @@ body{
   text-decoration: none;
   display: inline;
   justify-content: center;
-  padding: 3px;
+  padding: 20px;
   font-family: "DK Midnight Chalker";
+  top: 10px;
 
 }
 
 .paginas {
-  position: absolute;
-  top: 20px;
   font-size: 40px;
-  left: 39%;
-
+  align-items: center;
+  padding-left: 280px;
 }
+
+
 
 /* este codigo e para quando passar a fiquar cinza */
 .paginas a:hover{
-  background-color: gray;
+  padding: 20px;
+  color: black;
   transition: all 0.3s;
   text-decoration: none; 
-  border-radius: 5px;
-
 }
 
 .login {
   display: inline;
-  margin-left: 250px;
-
+  padding-left: 198px;
 }
 
 
 /* logo da pizza */
 .logo img{
-  width: 200px;
+  width: 175px;
+  padding-inline: 9px;
   display: flex;
 }
 

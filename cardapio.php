@@ -47,11 +47,8 @@
 </header>
 <hr>
 <div class="texto">
-  <?php if(!isset($_SESSION['id'])) { ?>
-    <h1>faça o cadastro ou login para ver o cadarpio</h1>
-  <?php } else{ ?>
-    <h1>Cardápio</h1>
-
+  <h1>Cardápio</h1>
+  
       <?php
       foreach ($result as $pizza) {?>
 
@@ -66,9 +63,11 @@
       </div>
     <?php } ?>
 
-
-
-  <?php } ?>
+    <?php if(isset($_SESSION['id'])) { ?>
+      <a href="criar-pizza.php"> criar mais pizzas </a>
+      <a href="deletar-pizza.php">deletar pizza</a>
+    <?php } ?>
+    
 </div>
 </body>
 </html>
