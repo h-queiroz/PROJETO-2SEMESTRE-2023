@@ -68,37 +68,61 @@ body{
   
 }
 
-.texto{
-  position: absolute;
+h1{
   color: white;
-  left: 35%;
-  top: 30%;
-  width: 400px;
-  height: 300px;
+  font-size: 300%;
+  padding-right: 52%;
+  text-decoration: underline;
+  }
+
+.box{
   border-radius: 30px;
+  width: 550px;
+  height: 500px;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, 0);
   text-align: center;
-  transform: translate(-35%, -30%,);
-  background-color: black;
+  position: absolute;
+  background-color:rgba(0, 0, 0, 0.623);
+  font-family: 'DK Midnight Chalker';
 
 }
 
+header{
+color: white;
+font-size: 300%;
+padding-right: 52%;
+text-decoration: underline;
+}
 
+label{
+font-size: 200%;
+padding-right: 52%;
+color: white;
+}
 
-p, h1{
-  font-size: 30px;
-  font-family: "DK Midnight Chalker";
+.box input{
+margin-top: 15px;
+background-color: transparent;
+border: none;
+border-bottom: 2px solid #e1e1e1;
+outline: none;
+color: #fff;
+text-align: left;
+font-size: 200%;
 
 }
 
-.direitos-autorais{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  font-family: "DK Midnight Chalker";
-  font-size: 20px;
-
+.box button{
+cursor: pointer;
+display: inline-block;
+margin-top: 15px;
+background-color: transparent;
+border: none;
+border-bottom: 2px solid #e1e1e1;
+outline: none;
+color: #fff;
+text-align: left;
+font-size: 243%;
 }

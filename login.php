@@ -26,6 +26,8 @@ if(isset($_POST['email'])||isset($_POST['senha'])){
     $_SESSION ['id'] = $result ['id'];
     $_SESSION ['nome'] = $result ['nome'];
     $_SESSION ['email'] = $result ['email'];
+    $_SESSION ['senha'] = $_POST['senha'];
+
     //print_r($_SESSION);
     header('location:index.php');
   }else{
