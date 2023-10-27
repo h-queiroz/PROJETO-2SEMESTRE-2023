@@ -48,7 +48,7 @@
   <p>Desde 2008 oferecendo a melhor experiência em pizza!</p>
 </div>
 <div class="image">
-  <img src="imgs/logo_transparente.png" alt="logo da bonnadica">
+  <img src="imgs/calabreza.jpg" alt="logo da bonnadica">
 </div>
 <div class="texto">
 
