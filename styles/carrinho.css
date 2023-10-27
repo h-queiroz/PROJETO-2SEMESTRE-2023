@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'DK Midnight Chalker';
+  src: url('../DK Midnight Chalker.otf') format('opentype');
+}
+body{
+background-image:url("../imgs/fundo-amarelo.jpg");
+background-size: 25%;
+font-family: 'DK Midnight Chalker';
+margin:0px;
+}
+.links-lado-direito{
+  font-size:50px; /* aumenta o tamanho da letra*/
+  position: absolute;
+  top: 30px;
+  right:100px;
+}
+ .links-lado-direito a{
+color:black;
+ margin-left: 10px; /* da espaço entre as palavras */
+ }
+
+
+
+
+.logo{
+  width:75px;
+  position: relative;
+  top:10px;
+   left:20px;
+   margin-bottom: 10px;
+}

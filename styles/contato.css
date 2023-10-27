@@ -41,7 +41,7 @@ a{
    position: absolute;
    top: 30px;
    width: 750px;
-   left: 500px;
+   left: 350px;
 
  }
  .links-lado-direito a{
@@ -75,6 +75,12 @@ top: 75px;
   position: relative;
   top: 7px;
   margin-right: 8px ;
+
+}
+.link-carrinho{
+position:absolute;
+right:-10px;
+
 
 }
 
