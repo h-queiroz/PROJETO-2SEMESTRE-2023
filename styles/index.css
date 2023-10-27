@@ -25,7 +25,7 @@ body{
   font-family: "DK Midnight Chalker";
   top: 10px;
   font-size: 40px;
-  
+
 }
 
 .paginas {
@@ -50,7 +50,7 @@ body{
   background-color: white;
   color: black;
   transition: all 0.3s;
-  text-decoration: none; 
+  text-decoration: none;
   border-radius: 5px;
 }
 
@@ -76,7 +76,7 @@ transition: 0.3s all ease-out;
 
 .image img:hover{
   transform: scale(1.1);
-  
+
 }
 
 
@@ -97,6 +97,5 @@ transition: 0.3s all ease-out;
 .logo{
   cursor: pointer;
   display: inline-block;
-  
-}
 
+}

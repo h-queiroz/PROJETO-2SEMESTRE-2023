@@ -16,7 +16,7 @@ if($_POST){
   //verificando o id e nome
   if($result){
     echo"<script language='javascript' type='text/javascript'>
-      alert('pizza deletada com sucesso');window.location.href='cardapio.php';</script>";
+      alert('pizza deletada com sucesso');window.location.href='cardapio';</script>";
   }else{
     echo"<script language='javascript'>
     alert('pizza não encontrada');</script>";

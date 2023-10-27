@@ -8,15 +8,15 @@
   </head>
 
 <body>
-  <a href="index.php">
+  <a href="./">
   <img src="imgs/pizza.png" alt="logo" class="logo">
 </a>
   <div class="links-lado-direito">
-    <a href="cardapio.php">Cardapio</a>
-    <a href="contato.php" class="verde">Contato</a>
-    <a href="sobre.php">Sobre-Nós</a>
-    <a href="login.php">Login</a>
-    <a href="cadastro.php">Cadastro</a>
+    <a href="cardapio">Cardapio</a>
+    <a href="contato" class="verde">Contato</a>
+    <a href="sobre">Sobre-Nós</a>
+    <a href="login">Login</a>
+    <a href="cadastro">Cadastro</a>
 
   </div>  <!-- tag div pode ser o que voce quiser  -->
 

@@ -16,30 +16,30 @@
 <body>
 <header class="top">
   <div class="logo">
-    <a href="index.php">
+    <a href="./">
       <img src="imgs/logo_transparente.png" alt="logo">
     </a>
     </div>
   <div class="paginas">
-    <a href="cardapio.php">Cardapio</a>
-    <a href="contato.php">Contato</a>
-    <a href="sobre.php">Sobre</a>
+    <a href="cardapio">Cardapio</a>
+    <a href="contato">Contato</a>
+    <a href="sobre">Sobre</a>
 
   </div>
     <?php if(isset($_SESSION['id'])){
       $usuario = $_SESSION['nome'];
       ?>
       <div class="login">
-        <a href="perfil.php"> <?php echo"$usuario";?> </a>
-        <a href="deslogar.php">sair</a>
+        <a href="perfil"> <?php echo"$usuario";?> </a>
+        <a href="deslogar">sair</a>
       </div>
     <?php }else{  ?>
       <div class="login">
-        <a href="login.php">Entrar</a>
-        <a href="cadastro.php">Criar Conta</a>
+        <a href="login">Entrar</a>
+        <a href="cadastro">Criar Conta</a>
       </div>
       <?php } ?>
-</header>      
+</header>
 <hr>
 <main class="texto">
   <h1 class="sobre">Nossa História</h1>
@@ -48,11 +48,11 @@
   <h1 class="historia">História da Pizza</h1>
 
   <p class="historia">A verdadeira historia da pizza ainda é um misterio, acredita-se que foram os egipcios os primeiros a criarem uma massa similar. Mas foram os italianos que deram um toque final acescentando tomate e queijo á massa no século XIX.
-      
+
     Com a chegada dos imigrantes italianos no Brasil em 1910 trouxeram a receita da pizza italiana. Inicialmente, os brasileiros não aderiram muito bem o novo prato porém, em 1950, a pizza se torna popular em todo paí
 
     Hoje, a pizza é tão parte da cultura brasileira quanto italiana. A cidade de São Paulo é a segunda cidade que mais consome pizza no mundo, perdendo apenas para a cidade de Nova Iorque
-      
+
     Para comemorar esse amor pela pizza em 1985, o dia 10 de julho foi escolhido como o dia Mundial da Pizza.
   </p>
 </main>

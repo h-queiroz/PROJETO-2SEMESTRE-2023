@@ -8,7 +8,7 @@ if(isset($_POST['email'])||isset($_POST['senha'])){
   //criando uma variavel com o valor cadastrado
   $email=$_POST['email'];
   $senha=$_POST['senha'];
-  
+
   //pegando os valores do banco de dados
   $sql="SELECT * FROM usuarios where email = ?";
 
@@ -48,37 +48,37 @@ if(isset($_POST['email'])||isset($_POST['senha'])){
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <title>Pizzaria Bonna Dica</title>
 </head>
-  
+
 <body>
 <header class="top">
   <div class="logo">
-    <a href="index.php">
+    <a href="./">
       <img src="imgs/logo_transparente.png" alt="logo">
     </a>
-    </div> 
+    </div>
     <div class="paginas">
-      <a href="cardapio.php">Cardapio</a>
-      <a href="contato.php">Contato</a>
-      <a href="sobre.php">Sobre</a>
+      <a href="cardapio">Cardapio</a>
+      <a href="contato">Contato</a>
+      <a href="sobre">Sobre</a>
     </div>
 
     <?php if(isset($_SESSION['id'])){
       $usuario = $_SESSION['nome'];
       ?>
       <div class="login">
-        <a href="perfil.php"> <?php echo"$usuario";?> </a>
-        <a href="deslogar.php">sair</a>
+        <a href="perfil"> <?php echo"$usuario";?> </a>
+        <a href="deslogar">sair</a>
       </div>
     <?php }else{  ?>
       <div class="login">
-        <a href="login.php">Entrar</a>
-        <a href="cadastro.php">Criar Conta</a>
+        <a href="login">Entrar</a>
+        <a href="cadastro">Criar Conta</a>
       </div>
     <?php } ?>
-</header>      
+</header>
 <hr>
 <div class="box">
-  <form action="login.php" method="post">
+  <form action="login" method="post">
   <h1>Login</h1>
   <label>E-mail</label>
   <input type="email" name="email" placeholder="">
@@ -87,7 +87,7 @@ if(isset($_POST['email'])||isset($_POST['senha'])){
   <div class="submit">
     <input type="submit" name="submit">
   </div>
-  <a href="cadastro.php">Não possui uma conta?</a>
+  <a href="cadastro">Não possui uma conta?</a>
     </div>
   </main>
 </body>

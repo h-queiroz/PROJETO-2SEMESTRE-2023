@@ -9,15 +9,15 @@
 
   <body> <!--responsavel pela estrutura da pagina, parte visual -->
     <div class="topo">
-      <a href="index.php"> <img src="imgs/pizza.png" alt="logo" class="logo"> </a> </a> <!--tag a feito para fazer links, img para colocar imagem  -->
+      <a href="./"> <img src="imgs/pizza.png" alt="logo" class="logo"> </a> </a> <!--tag a feito para fazer links, img para colocar imagem  -->
 
       <div class="links-lado-direito"> <!-- tag div pode ser o que você quiser  -->
-        <a href="cardapio.php">Cardapio</a>
-        <a href="contato.php" class="verde">Contato</a>
-        <a href="sobre.php">Sobre-Nós</a>
-        <a href="login.php">Login</a>
-        <a href="cadastro.php">Cadastro</a>
-        <a class= " link-carrinho"href="carrinho.php"> <img src="imgs/carro.png" width="80px"> </a>
+        <a href="cardapio">Cardapio</a>
+        <a href="contato" class="verde">Contato</a>
+        <a href="sobre">Sobre-Nós</a>
+        <a href="login">Login</a>
+        <a href="cadastro">Cadastro</a>
+        <a class= " link-carrinho"href="carrinho"> <img src="imgs/carro.png" width="80px"> </a>
       </div>
     </div>
     <hr>

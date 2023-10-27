@@ -55,18 +55,18 @@
 <body>
 <div class="top">
   <div class="logo">
-    <a href="index.php">
+    <a href="./">
       <img src="imgs/logo_transparente.png" alt="logo">
     </a>
   </div>
   <div class="paginas">
-    <a href="cardapio.php">Cardapio</a>
-    <a href="contato.php">Contato</a>
-    <a href="sobre.php">Sobre</a>
+    <a href="cardapio">Cardapio</a>
+    <a href="contato">Contato</a>
+    <a href="sobre">Sobre</a>
   </div>
   <div class="login">
-    <a href="login.php">Login</a>
-    <a href="cadastro.php">Criar Conta</a>
+    <a href="login">Login</a>
+    <a href="cadastro">Criar Conta</a>
   </div>
 </div>
 <hr>

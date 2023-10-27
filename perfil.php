@@ -16,12 +16,12 @@
     $email=$_POST['email'];
     $usuario=$_POST['nome'];
     $senha=password_hash($_POST['senha'], PASSWORD_DEFAULT);
-    
+
     $_SESSION['nome'] = $_POST['nome'];
     $_SESSION['email'] = $_POST['email'];
-    
+
     $sql="UPDATE usuarios SET email = '$email', nome = '$usuario', senha = '$senha' where (id = '$id') ";
-    
+
     $stmt=mysqli_query($conexao, $sql);
 
   }
@@ -43,35 +43,35 @@
 <body>
 <header class="top">
   <div class="logo">
-    <a href="index.php">
+    <a href="./">
       <img src="imgs/logo_transparente.png" alt="logo">
     </a>
   </div><!--logo-->
 
   <div class="paginas">
-    <a href="cardapio.php">Cardapio</a>
-    <a href="contato.php">Contato</a>
-    <a href="sobre.php">Sobre</a> 
+    <a href="cardapio">Cardapio</a>
+    <a href="contato">Contato</a>
+    <a href="sobre">Sobre</a>
   </div> <!-- paginas -->
 
   <?php if(isset($_SESSION['id'])){
     $usuario = $_SESSION['nome'];
   ?>
     <div class="login">
-      <a href="perfil.php"> <?php echo"$usuario";?> </a>
-      <a href="deslogar.php">sair</a>
+      <a href="perfil"> <?php echo"$usuario";?> </a>
+      <a href="deslogar">sair</a>
     </div> <!-- login -->
   <?php }else{  ?>
     <div class="login">
-      <a href="login.php">Entrar</a>
-      <a href="cadastro.php">Criar Conta</a>
+      <a href="login">Entrar</a>
+      <a href="cadastro">Criar Conta</a>
     </div> <!-- login -->
   <?php } ?>
 
 </header><!-- top -->
 
 <hr>
-<form action="perfil.php" method="POST">
+<form action="perfil" method="POST">
   <div class="box">
     <h1>Usuario</h1>
     <label>Nome do usuario:</label>

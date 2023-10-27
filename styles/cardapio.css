@@ -1,9 +1,7 @@
 @font-face {
   font-family: 'DK Midnight Chalker';
   src: url('../DK Midnight Chalker.otf') format('opentype');
-
 }
-
 
 .top{
   display: flex;
@@ -15,7 +13,6 @@ body{
   margin: 0px;
   padding: 0px;
   background-image: url("../imgs/black-bg.jpg");
-  background-size: 25%;
 }
 
 .paginas a, .login a{
@@ -27,7 +24,6 @@ body{
   font-family: "DK Midnight Chalker";
   top: 10px;
   font-size: 40px;
-
 }
 
 .paginas {
@@ -37,7 +33,6 @@ body{
   transform: translate(-50%,-50%);
 }
 
-
 .login {
   position: absolute;
   top: 50%;
@@ -45,14 +40,13 @@ body{
   transform: translate(0,-50%);
 }
 
-
 /* este codigo e para quando passar a fiquar cinza */
 .paginas a:hover, .login a:hover{
   padding: 20px;
   background-color: white;
   color: black;
   transition: all 0.3s;
-  text-decoration: none; 
+  text-decoration: none;
   border-radius: 5px;
 }
 
@@ -65,20 +59,19 @@ body{
 .logo{
   cursor: pointer;
   display: inline-block;
-
 }
 
 .image img{
-width: 700px;
-background-color: black;
-border-radius: 30px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+  width: 700px;
+  background-color: black;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.texto label {
+.texto label{
   font-size: 50px;
   color:white;
   text-align: center;
@@ -88,7 +81,7 @@ transform: translate(-50%, -50%);
   font-family: "DK Midnight Chalker";
 }
 
- .texto {
+.texto{
   font-family: "DK Midnight Chalker";
   color: white;
   text-align: left;
@@ -127,6 +120,10 @@ transform: translate(-50%, -50%);
   justify-items:left;
 }
 
+.pizza span{
+  user-select: none;
+}
+
 .pizza form input{
   display: none;
 }
@@ -153,12 +150,92 @@ transform: translate(-50%, -50%);
   text-align: center;
 }
 
+/* ABAIXO DAQUI É ONDE COMEÇO A MEXER CUSTOMIZAR A BOX */
+
+/* Box */
 .box{
-  width: 150px;
+  width: 400px;
+  height: 350px;
   position: absolute;
-  display: inline;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  opacity: 0;
+  transition: 0.3s all ease-in;
+  border: 1px solid white;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
-.box hover{
-  background-color: red;
+/* X de fechar a Box */
+.box span{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  font-family: sans-serif;
+  border: 1px solid white;
+  color: white;
+  transition: 0.15s all ease-in;
+}
+
+.box span:hover{
+  background-color: rgba(252,255,255,0.3);
+  transform: scale(1.1);
+}
+
+/* Formulário dentro da Box */
+.box form{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Inputs do Formulário */
+.box form input{
+  box-sizing: border-box;
+  width: 70%;
+  height: 45px;
+  border: 0;
+  border-bottom: 2px solid white;
+  font-size: 23px;
+  background-color: transparent;
+  margin-bottom: 25px;
+  color: white;
+  outline: none;
+  padding-left: 5px;
+}
+
+/* Placeholder dos Inputs */
+.box form input::placeholder{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Botão de Adicionar */
+.box form button{
+  width: 70%;
+  height: 35px;
+  cursor: pointer;
+  background-color: rgb(63, 63, 137);
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 18px;
+  color: white;
+  transition: all 0.15s linear;
+}
+
+.box form button:hover{
+  transform: scale(1.05);
 }
