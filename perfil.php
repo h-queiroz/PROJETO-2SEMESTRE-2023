@@ -10,25 +10,22 @@
   $usuario = $_SESSION['nome'];
   $email = $_SESSION['email'];
   $senha = $_SESSION['senha'];
+  //$senha = password_get_info($senha, $_POST['senha']);
   if($_POST){
 
     $email=$_POST['email'];
-    $senha=$_POST['senha'];
     $usuario=$_POST['nome'];
-    //$senha=password_hash($senha, PASSWORD_DEFAULT);
-
+    $senha=password_hash($_POST['senha'], PASSWORD_DEFAULT);
+    
+    $_SESSION['nome'] = $_POST['nome'];
+    $_SESSION['email'] = $_POST['email'];
     
     $sql="UPDATE usuarios SET email = '$email', nome = '$usuario', senha = '$senha' where (id = '$id') ";
     
     $stmt=mysqli_query($conexao, $sql);
-    
-  if($stmt){
-    echo "atualizado com sucesso";
-  } else {
-    echo "Erro ao atualizar o registro: " . $conexao->error;
+
   }
-}
-  
+
 ?>
 
 <!DOCTYPE html>
@@ -39,6 +36,9 @@
   <link rel="stylesheet" href="styles/perfil.css" />
   <link rel="icon" href="imgs/pizza.png" type="image/x-icon">
   <title>Bonna Dica</title>
+  <style> pre{
+    color: white;
+  } </style>
 </head>
 <body>
 <header class="top">
@@ -77,7 +77,7 @@
     <label>Nome do usuario:</label>
     <input type="text" name="nome" require id="nome" value="<?php echo $usuario;?>"><br>
     <label>senha do usuario:</label>
-    <input type="text" name="senha" require id="senha" value="<?php echo $senha?>"><br>
+    <input type="text" name="senha" require id="senha" ><br>
     <label>email do usuario:</label>
     <input type="email" name="email" require id="email" value="<?php echo $email ?>"><br>
     <button>confirmar</button>
